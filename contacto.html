@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ruh | Esencia</title>
+</head>
+
+<body class="grid-contacto">
+    <header>
+        <div class="barra">
+            <div class="logo">
+                <img src="Image/logo.jpg" alt="Logo" class="logo-img">
+                <h1>Ruh - Esencia</h1>
+            </div>
+            <div class="redes_head">
+                <a href="https://www.instagram.com/ruh.esencia/" target="_blank" class="redes_head1">
+                    <img src="logos/insta-head.png" alt="Instagram" width="20%"></a>
+                <a href="https://www.facebook.com" target="_blank" class="redes_head2">
+                    <img src="logos/face-head.png" alt="Facebook" width=20%></a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="botonera">
+        <ul class="botonera_lista">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nosotras.html">Nosotras</a></li>
+            <li><a href="productos.html">Productos</a>
+                <ul>
+                    <li> <a href="productos.html#sahumerios">Sahumerios</a></li>
+                    <li><a href="productos.html#sahumos">Sahumos y Defumadores</a></li>
+                    <li><a href="productos.html#velas">Velas</a></li>
+                </ul>
+            </li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="info.html">+ Info</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="main_contacto">
+        <section class="section_contacto">
+            <div class="datos-contacto">
+                <p class="contacto-tit">Contacto</p>
+                <div class="item_contacto">
+                    <img src="logos/wa-icono.svg" alt="WP" widht=30 height=30>
+                    <h5>+54 9 3512297942</h5>
+                </div>
+                <div class="item_contacto">
+                    <img src="logos/mail-icono.svg" alt="Gmail" widht=30 height=30>
+                    <h5>ruh.esencia@gmail.com</h5>
+                </div>
+                <div class="item_contacto">
+                    <img src="logos/ubicacion-icono.svg" alt="Ubicación" widht=30 height=30>
+                    <h5>Recta Martinolli 7759</h5>
+                </div>
+            </div>
+            <div class="datos-redes"> 
+                <p class="contacto-tit">Nuestas Redes Sociales</p>
+                <div class="item_redes">
+                    <img src="logos/Insta-logo.png" alt="Instagram">
+                    <a href="https://www.instagram.com/ruh.esencia/" target="_blank">Seguinos en Instagram</a>
+                </div>
+                <div class="item_redes">
+                    <img src="logos/Face-logo.png" alt="Facebook">
+                    <a href="https://www.facebook.com" target="_blank"> Seguinos en Facebook</a>
+                </div>
+            </div>
+        </section>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3407.410012813745!2d-64.27039298505886!3d-31.347663000067364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329e9fa656daa5%3A0x76881781dbca37b8!2sAv.%20Recta%20Martinolli%207759%2C%20X5147HZA%20C%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses-419!2sit!4v1646784326315!5m2!1ses-419!2sit"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="mapa"></iframe>
+    </div>
+
+    <section class="formulario">
+        <div class="form-container">
+        <p class="form-tit">Contactate con nosotras</p>
+
+        <form action="form.php" method="POST" class="contacto-form">
+            <div class="form-row">
+                <label for="full-name">Nombre</label>
+                <input type="text" id="full-name" name="nombre">
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Ej maria@gmail.com" name="email">
+            </div>
+            <div class="form-row">
+                <label for="telefono">Telefono</label>
+                <input type="number" id="telefono" name="telefono">
+            </div>
+
+            <div class="form-row">
+                <label for="abstract">Mensaje</label>
+                <textarea name="textarea" id="abstract"></textarea>
+                <p class="instructions">Describe tu consulta en 500 palabras o menos</p>
+            </div>
+
+            <div class="form-row">
+                <button type="submit">Enviar</button>
+            </div>
+       
+        </form>
+    </div>
+    </section>
+
+    <footer>
+        <div class="foot">
+            <nav class="botonera_f">
+                <div class="botonera_f_tit">Categoria</div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nosotras.html">Nosotras</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="info.html">+ Info</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="redes">
+                <div class="redes_tit">Sigamos conectados</div>
+                <div class="redes_iconos">
+                    <a href="https://www.instagram.com/ruh.esencia/" target="_blank" class="redes_link1">
+                        <img src="logos/Insta-logo.png" alt="Instagram" class="redes-img"> </a>
+                    <a href="https://www.facebook.com" target="_blank" class="redes_link2">
+                        <img src="logos/Face-logo.png" alt="Facebook" class="redes-img"></a>
+                </div>
+            </div>
+
+            <section class="foot_contacto">
+                <div class="foot_contacto_tit">Contactanos</div>
+                <div>
+                    <article class="foot_contacto_iconos">
+                        <img src="logos/wa-icono.svg" alt="wa" class="icono">
+                        <h5>+54 9 3512297942</h5>
+                    </article>
+                    <article class="foot_contacto_iconos">
+                        <img src="logos/mail-icono.svg" alt="Gmail" class="icono">
+                        <h5>ruh.esencia@gmail.com</h5>
+                    </article>
+                    <article class="foot_contacto_iconos">
+                        <img src="logos/ubicacion-icono.svg" alt="Ubicación" class="icono">
+                        <h5>Recta Martinolli 7759</h5>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </footer>
+
+</body>
+
+</html>
