@@ -455,7 +455,7 @@ h3 {
 /* ------------------------------ fin productos ----------------------------- */
 
 /* --------------------------------- eventos -------------------------------- */
-.grid-evento {
+.grid-mayorista {
   display: grid;
   min-height: 150vh;
   grid-template-areas:
@@ -468,7 +468,7 @@ h3 {
   grid-template-rows: 5rem 3rem 1fr 2fr 14rem;
 }
 
-.evento_tit {
+.mayor_tit {
   grid-area: section1;
   background-image: url("../Image/evento-portada.png");
   width: 100%;
@@ -477,7 +477,7 @@ h3 {
   place-content: center;
 }
 
-.evento_tit p {
+.mayor_tit p {
   font-size: 10mm;
   font-family: sans-serif;
   font-weight: 500;
@@ -486,18 +486,18 @@ h3 {
   color: rgb(78, 72, 72);
 }
 
-.container_evento {
+.container_mayor {
   grid-area: section2;
   margin: 2rem 10rem;
   align-items: center;
 }
 
-.item_evento {
+.item_mayor {
   width: 15rem;
   padding-left: 1.4rem;
 }
 
-.container_evento a {
+.container_mayor a {
   background-color: rgb(116, 116, 116);
   ;
   color: white;
