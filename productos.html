@@ -6,34 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
     <title>Ruh | Esencia</title>
 </head>
 
-<body class="grid-prod">
+<body>
+    <  <!-- header -->
     <header>
-        <div class="barra">
 
+        <div class="barra">
             <div class="logo">
                 <img src="Image/logo.jpg" alt="Logo" class="logo-img">
                 <h1>Ruh - Esencia</h1>
             </div>
-
             <div class="redes_head">
-                <a href="https://www.instagram.com/ruh.esencia/" target="_blank" class="redes_head1">
-                    <img src="logos/insta-head.png" alt="Instagram" width="20%"></a>
+                <a href="https://www.instagram.com/ruh.esencia/80X80" target="_blank" class="redes_head1">
+                    <img src="logos/insta-head.png" alt="Instagram" width="15%"></a>
                 <a href="https://www.facebook.com" target="_blank" class="redes_head2">
-                    <img src="logos/face-head.png" alt="Facebook" width=20%></a>
+                    <img src="logos/face-head.png" alt="Facebook" width=15%></a>
             </div>
-
-
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-lg">
+    <!-- inicio nav  -->
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
+            <button class="navbar-toggler button-nav" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -65,79 +69,84 @@
             </div>
         </div>
     </nav>
-<div class="tit">
-    <h2>Nuestos Productos</h2>
-</div>
+
+    
+    <div class="tit">
+        <h2>Nuestos Productos</h2>
+    </div>
 
     <!-- --------------------------- Agregar filtro(como listas de definicion?) ---------------------------- -->
-    <div class="container_prod">
 
-        <section id="sahumerios">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <section id="sahumerios"></section>
             <h3>Sahumerios</h3>
-            <div class="container_img">
-                <div class="item">
-                    <img src="image/Prod-Palo-Santo.png" alt="Palo Santo" class="item_img">
-                    <p>Linea Palo Santo</p>
-                </div>
-                <div class="item">
-                    <img src="image/prod-saumerios.png" alt="Natural" class="item_img">
-                    <p>Linea Natural</p>
-                </div>
-                <div class="item">
-                    <img src="image/prod-s-premium.png" alt="Premium" class="item_img">
-                    <p>Linea Premium</p>
-                </div>
-                <div class="item">
-                    <img src="Image/prod-porta-shau.png" alt="portasahumerio" class="item_img">
-                    <p>Porta Sahumerio de madera</p>
-                </div>
+            <div class="col-lg-3 col-md-5 col-sm-8">
+                <img src="image/Prod-Palo-Santo.png" alt="Palo Santo" class="item_img">
+                <p>Linea Palo Santo</p>
             </div>
-        </section>
+            <div class="col-lg-3 col-md-5 col-sm-8">
+                <img src="image/prod-saumerios.png" alt="Natural" class="item_img">
+                <p>Linea Natural</p>
+            </div>
+            <div class="col-lg-3 col-md-5 col-sm-8">
+                <img src="image/prod-s-premium.png" alt="Premium" class="item_img">
+                <p>Linea Premium</p>
+            </div>
+            <div class="col-lg-3 col-md-5 col-sm-8">
+                <img src="Image/prod-porta-shau.png" alt="portasahumerio" class="item_img">
+                <p>Porta Sahumerio de madera</p>
+            </div>
+        </div>
+    </div>
 
-        <section id="sahumos">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <section id="sahumos"></section>
             <h3>Sahumos y defumadores</h3>
-            <div class="container_img">
-                <div class="item">
-                    <img src="image/prod-sahumo-1.png" alt="Sahumo" class="item_img">
-                    <p>Ramillo de Sahumo</p>
-                </div>
-                <div class="item">
-                    <img src="image/prod-Pastillas.png" alt="Pastillas" class="item_img">
-                    <p>Pastillas Defumadoras</p>
-                </div>
-                <div class="item">
-                    <img src="Image/prod-piramide.png" alt="Piramides" class="item_img">
-                    <p>Piramides Defumadoras</p>
-                </div>
-                <div class="item">
-                    <img src="Image/prod-bombitas.png" alt="Bombitas" class="item_img">
-                    <p>Bombitas Defumadoras</p>
-                </div>
-                <div class="item">
-                    <img src="Image/prod-siete Chacras.png" alt="7 Chachras" class="item_img">
-                    <p>Bombitas 7 Chakras </p>
-                </div>
-                <div class="item">
-                    <img src="Image/prod-sahumadores.png" alt="Sahumadores" class="item_img">
-                    <p>Sahumador de ceramica</p>
-                </div>
+            <div class="col-lg-3 col-md-5 col-sm-8">
+                <img src="image/prod-sahumo-1.png" alt="Sahumo" class="item_img">
+                <p>Ramillo de Sahumo</p>
             </div>
-        </section>
-
-        <section id="velas">
-            <h3>Velas de Soja Aromaticas</h3>
-            <div class="container_img">
-                <div class="item">
-                    <img src="Image/prod-velas.png" alt="Velas" class="item_img">
-                    <p>Vela con flores</p>
-                </div>
-                <div class="item">
-                    <img src="Image/prod-velitas.png" alt="Velitas" class="item_img">
-                    <p>Mini Velitas de madera</p>
-                </div>
+            <div class="col-lg-3 col-md-5 col-sm-8">
+                <img src="image/prod-Pastillas.png" alt="Pastillas" class="item_img">
+                <p>Pastillas Defumadoras</p>
             </div>
-        </section>
+            <div class="col-lg-3 col-md-5 col-sm-8">
+                <img src="Image/prod-piramide.png" alt="Piramides" class="item_img">
+                <p>Piramides Defumadoras</p>
+            </div>
+            <div class="col-lg-3 col-md-5 col-sm-8">
+                <img src="Image/prod-bombitas.png" alt="Bombitas" class="item_img">
+                <p>Bombitas Defumadoras</p>
+            </div>
+            <div class="col-lg-3 col-md-5 col-sm-8">
+                <img src="Image/prod-siete Chacras.png" alt="7 Chachras" class="item_img">
+                <p>Bombitas 7 Chakras </p>
+            </div>
+            <div class="col-lg-3 col-md-5 col-sm-8">
+                <img src="Image/prod-sahumadores.png" alt="Sahumadores" class="item_img">
+                <p>Sahumador de ceramica</p>
+            </div>
+        </div>
+    </div>
 
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <section id="sahumos"></section>
+            <h3>Sahumos y defumadores</h3>
+            <div class="col-lg-3 col-md-5 col-sm-8">
+                <img src="Image/prod-velas.png" alt="Velas" class="item_img">
+                <p>Vela con flores</p>
+            </div>
+            <div class="col-lg-3 col-md-5 col-sm-8">
+                <img src="Image/prod-velitas.png" alt="Velitas" class="item_img">
+                <p>Mini Velitas de madera</p>
+            </div>
+        </div>
     </div>
 
     <footer>
@@ -184,11 +193,11 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-</script>
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
 
 </body>
 
