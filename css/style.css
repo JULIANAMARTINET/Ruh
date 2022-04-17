@@ -15,7 +15,6 @@ body {
   font-size: 16px;
 }
 
-
 /* --------------------------------- header --------------------------------- */
 
 header {
@@ -33,9 +32,11 @@ header {
 }
 
 @media screen and (max-width: 576px) {
-  header { font-size: 12px;
+  header {
+    font-size: 12px;
   }
 }
+
 .logo {
   display: flex;
 }
@@ -133,7 +134,10 @@ h1 {
 .navbar-nav li:hover ul {
   display: block;
 }
-.navbar-toggler { margin: .25rem}
+
+.navbar-toggler {
+  margin: .25rem
+}
 
 /* ------------------------------- fin nav ------------------------------- */
 
@@ -149,19 +153,22 @@ h1 {
   margin: auto;
 }
 
-.cont-card { display: flex;
-   flex-wrap: nowrap}
+.cont-card {
+  display: flex;
+  flex-wrap: nowrap
+}
 
 .card-home {
   box-shadow: 0 0 30px 0 rgb(90, 88, 88);
 }
 
-@media screen and (max-width: 574px) {
-.row { max-width: 400px;
-margin: auto
+@media screen and (max-width: 576px) {
+  .row {
+    max-width: 400px;
+    margin: auto
+  }
 }
-  
-}
+
 .card-img-top {
   transition: all 1s;
 }
@@ -186,7 +193,7 @@ margin: auto
 
 .img_nosotras {
   width: 100%;
-  padding: 3rem;
+   padding: 3em; 
 }
 
 .home-nosotras {
@@ -234,7 +241,9 @@ footer {
   margin: auto;
 }
 
-.botonera_f { margin: 0em 0.5em}
+.botonera_f {
+  margin: 0em 0.5em
+}
 
 .botonera_f_tit {
   margin-top: 0.5rem;
@@ -333,44 +342,81 @@ h5 {
 }
 
 @media screen and (max-width: 1140px) {
-.foot { max-width: 700px;
-margin: auto; }}
-
-@media screen and (max-width: 576px) {
-  footer { font-size: 12px;
+  .foot {
+    max-width: 700px;
+    margin: auto;
   }
 }
+
+@media screen and (max-width: 576px) {
+  footer {
+    font-size: 12px;
+  }
+}
+
 /* ------------------------------- fin footer ------------------------------- */
 
 /* -------------------------------- nosotras -------------------------------- */
 
 .nos_portada {
   display: grid;
+  background-image: url(../Image/fondo-nos.png);
+  background-size: contain;
+  max-width: 72rem;
+  margin: auto
 }
 
 .nos_portada_art {
   justify-self: center;
-  width: 60%;
-  margin: 1rem;
+  width: 80%;
+  margin: 1rem 1rem 5rem 1rem;
+}
+
+@media screen and (max-width: 990px) {
+  .nos_portada_art {
+    width: 70%;
+    font-size: 14px;
+  }
+
+  .nos_main_art {
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .nos_portada_art {
+    width: 80%;
+    font-size: 12px;
+  }
+
+  body {
+    font-size: 14px;
+  }
 }
 
 .nos_portada p {
   text-align: center;
+  font-size: 1.2em;
+}
+
+.card-nos {
+  position: relative;
+  bottom: 4rem;
 }
 
 .nos_main_img {
   width: 80%;
   padding: 1rem;
-  margin: 2rem;
+  margin: 0rem 2rem 2rem 2rem;
   border-radius: 2%;
   position: relative;
-  top: 6rem;
+  top: 5rem;
 }
 
 .nos_main_art {
   width: 90%;
   padding: 4rem 2rem 1rem 2rem;
-  margin: 0.5rem 0.5rem 2rem 0.5rem;
+  margin: 0.5;
   border: 2px solid gray;
 }
 
@@ -455,11 +501,10 @@ h3 {
 
 h2 {
   font-family: "Slabo 27px", serif;
-  font-size: 2.5rem;
+  font-size: 2.5em;
   font-weight: 500;
   text-align: center;
-  padding-top: 3rem;
-  padding-bottom: 1.5rem;
+  padding: 1em 0em;
   border-bottom: 1px solid gray;
 }
 
@@ -642,7 +687,3 @@ video {
 .form-row button:active {
   background-color: rgb(76, 132, 238);
 }
-
-
-/* media query */
-
