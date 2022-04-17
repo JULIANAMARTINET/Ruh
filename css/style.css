@@ -3,7 +3,9 @@
   padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&family=Waterfall&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&family=Slabo+27px&display=swap');
+
 
 body {
   font-family: "roboto";
@@ -16,7 +18,6 @@ body {
 
 /* --------------------------------- header --------------------------------- */
 
-
 header {
   z-index: 10;
   background-color: #747c58;
@@ -25,12 +26,16 @@ header {
 }
 
 .barra {
-  max-width: 120rem;
+  max-width: 72em;
   margin: auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
+@media screen and (max-width: 576px) {
+  header { font-size: 12px;
+  }
+}
 .logo {
   display: flex;
 }
@@ -38,14 +43,14 @@ header {
 .logo-img {
   width: 70px;
   border-radius: 20%;
-  padding: 0.5rem;
+  padding: 0.5em;
 }
 
 h1 {
   color: rgb(219, 206, 161);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.8em;
   font-weight: unset;
   align-self: center;
 }
@@ -57,14 +62,12 @@ h1 {
 
 .redes_head1 {
   display: flex;
-  justify-content: flex-end;
-  padding: 0rem 0.5rem;
+  padding: 0em 0.5em;
+  width: 3.125em
 }
 
-.redes_head2 {
-  display: flex;
-  justify-content: flex-start;
-  padding: 0rem 0.5rem;
+.redes_head1 img {
+  width: 2.5em
 }
 
 /* ------------------------------- fin header ------------------------------- */
@@ -75,7 +78,8 @@ h1 {
   border-top: 0.5px solid rgb(243, 243, 225);
   z-index: 10;
   position: sticky;
-  top: 4.2rem;
+  top: 4.5rem;
+  padding: 0px;
 }
 
 .navbar-collapse {
@@ -91,13 +95,26 @@ h1 {
   color: rgb(243, 243, 225) !important;
 }
 
-.nav-item a {
+.nav-link {
   color: rgb(243, 243, 225) !important;
   font-size: 1.2rem;
+  --clippy: polygon(0 0, 0 0, 0 98%, 0% 100%);
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  background-color: white;
+  width: 90%;
+  margin-top: 3px;
+  height: 3px;
+  clip-path: var(--clippy);
+  transition: clip-path .5s;
 }
 
 .nav-link:hover {
   color: rgb(37, 36, 36);
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .dropdown-menu {
@@ -116,22 +133,35 @@ h1 {
 .navbar-nav li:hover ul {
   display: block;
 }
+.navbar-toggler { margin: .25rem}
 
 /* ------------------------------- fin nav ------------------------------- */
 
 /* ---------------------------------- cuerpo home ---------------------------------- */
 
-.text-carousel { font-size: 2.5rem;}
+.text-carousel {
+  font-size: 2.5rem;
+  font-family: 'Open Sans', sans-serif;
+}
 
 .container {
-  max-width: 72rem;
+  max-width: 72em;
   margin: auto;
 }
+
+.cont-card { display: flex;
+   flex-wrap: nowrap}
 
 .card-home {
   box-shadow: 0 0 30px 0 rgb(90, 88, 88);
 }
 
+@media screen and (max-width: 574px) {
+.row { max-width: 400px;
+margin: auto
+}
+  
+}
 .card-img-top {
   transition: all 1s;
 }
@@ -140,10 +170,18 @@ h1 {
   transform: scale(0.9);
 }
 
-.btn { background-color: rgb(116, 116, 116);
+.btn {
+  background-color: rgb(148, 138, 138);
   border-radius: 5%;
   color: white;
-border: none;
+  border: none;
+  transition: all 1s
+}
+
+.btn:hover {
+  background-color: #747c58;
+  color: rgb(243, 243, 225);
+  transform: scale(1.1);
 }
 
 .img_nosotras {
@@ -157,7 +195,7 @@ border: none;
 }
 
 .boton {
-  background-color: rgb(116, 116, 116);
+  background-color: rgb(148, 138, 138);
   border-radius: 5%;
   padding: 0.6rem 0.8rem;
   margin: 1rem 4rem;
@@ -171,6 +209,8 @@ border: none;
 
 .boton.nos:hover {
   transform: scale(1.2);
+  background-color: #747c58;
+  color: rgb(243, 243, 225)
 }
 
 .boton a {
@@ -182,23 +222,26 @@ border: none;
 /* ------------------------------ inicio footer ----------------------------- */
 
 footer {
-  grid-area: footer;
   background-color: #a3a59e77;
-  font-size: 16px
 }
 
 .foot {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1140px;
   margin: auto;
 }
 
+.botonera_f { margin: 0em 0.5em}
+
 .botonera_f_tit {
   margin-top: 0.5rem;
-  padding: 1em;
+  margin-bottom: 0.5rem;
+  padding: 0.4em;
   font-size: 1.2em;
+  border-bottom: 1px solid black;
 }
 
 .botonera_f li {
@@ -216,23 +259,24 @@ footer {
 .redes {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  margin: 0em 0.5em
 }
 
 .redes_tit {
-  margin-top: 1.2em;
+  margin-top: 0.5rem;
   padding: 0.4em;
   font-size: 1.2em;
   text-align: center;
+  border-bottom: 1px solid black;
 }
 
 .redes_iconos {
   display: flex;
   justify-content: center;
+  padding-top: 2rem;
 }
 
 .redes_link1 {
-
   padding: 0.5em;
   margin-bottom: 2.5em;
 }
@@ -243,20 +287,32 @@ footer {
 }
 
 .redes-img {
-  width: 50px;
+  width: 3.12em;
+}
+
+.logo-tit-f {
+  font-size: 1.8em;
+  color: gray;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: unset;
+  align-self: center;
 }
 
 .foot_contacto {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   text-align: start;
+  margin: 0em 0.5em
 }
 
 .foot_contacto_tit {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
   padding: 0.4rem;
   font-size: 1.2em;
   text-align: center;
+  border-bottom: 1px solid black;
 }
 
 .foot_contacto_iconos {
@@ -276,6 +332,14 @@ h5 {
   padding: 0.6rem;
 }
 
+@media screen and (max-width: 1140px) {
+.foot { max-width: 700px;
+margin: auto; }}
+
+@media screen and (max-width: 576px) {
+  footer { font-size: 12px;
+  }
+}
 /* ------------------------------- fin footer ------------------------------- */
 
 /* -------------------------------- nosotras -------------------------------- */
@@ -283,14 +347,17 @@ h5 {
 .nos_portada {
   display: grid;
 }
+
 .nos_portada_art {
   justify-self: center;
   width: 60%;
   margin: 1rem;
 }
+
 .nos_portada p {
   text-align: center;
 }
+
 .nos_main_img {
   width: 80%;
   padding: 1rem;
@@ -299,6 +366,7 @@ h5 {
   position: relative;
   top: 6rem;
 }
+
 .nos_main_art {
   width: 90%;
   padding: 4rem 2rem 1rem 2rem;
@@ -310,7 +378,8 @@ h5 {
 
 /* -------------------------------- Productos ------------------------------- */
 
-.tit{ max-width: 1140px;
+.tit {
+  max-width: 1140px;
   margin: auto
 }
 
@@ -576,3 +645,4 @@ video {
 
 
 /* media query */
+
