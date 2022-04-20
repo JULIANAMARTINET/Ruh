@@ -1,34 +1,16 @@
+@import "base/common";
+@import "base/header-nav";
+@import "base/footer";
+@import "componentes/home";
+@import "componentes/nosotras";
+@import "componentes/productos";
+@import "componentes/mayorista";
+@import "componentes/+info";
+@import "componentes/contacto";
 
-@import "header-nav";
-@import "footer";
-@import "home";
-@import "nosotras";
-@import "productos";
-@import "mayorista";
-@import "+info";
-@import "contacto";
 
-* {
-    margin: 0;
-    padding: 0;
-  }
-  
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&family=Slabo+27px&display=swap');
-  
-  
-  body {
-    font-family: "roboto";
-    font-weight: 300;
-    text-align: justify;
-    background-color: rgba(247, 244, 239, 0.904);
-    font-size: 16px;
-  }
-  
-  
   
 
- 
- 
-  
+
   
   

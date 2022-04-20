@@ -1,55 +1,61 @@
-/* --------------------------------- header --------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&family=Slabo+27px&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "roboto";
+  font-weight: 300;
+  text-align: justify;
+  background-color: rgba(247, 244, 239, 0.904);
+  font-size: 16px;
+}
+
+/* --------------------------------- header --------------------------------- */
 header {
   z-index: 10;
   background-color: #747c58;
   position: sticky;
   top: 0;
 }
-
-.barra {
+header .barra {
   max-width: 72em;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
-
-@media screen and (max-width: 576px) {
-  header {
-    font-size: 12px;
-  }
-}
-.logo {
+header .barra .logo {
   display: flex;
 }
-
-.logo-img {
+header .barra .logo .logo-img {
   width: 70px;
   border-radius: 20%;
   padding: 0.5em;
 }
-
-h1 {
+header .barra .logo h1 {
   color: rgb(219, 206, 161);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.8em;
   font-weight: unset;
   align-self: center;
 }
-
-.redes_head {
+header .barra .redes_head {
   display: flex;
   align-items: center;
 }
-
-.redes_head1 {
+header .barra .redes_head .redes_head1 {
   display: flex;
   padding: 0em 0.5em;
   width: 3.125em;
 }
-
-.redes_head1 img {
+header .barra .redes_head .redes_head1 img {
   width: 2.5em;
+}
+@media screen and (max-width: 576px) {
+  header {
+    font-size: 12px;
+  }
 }
 
 /* ------------------------------- fin header ------------------------------- */
@@ -64,13 +70,17 @@ h1 {
   padding: 0px;
 }
 
+.button-nav {
+  background-color: rgb(243, 243, 225);
+  color: gray;
+}
+
 .navbar-collapse {
   justify-content: center;
 }
 
-.button-nav {
-  background-color: rgb(243, 243, 225);
-  color: gray;
+.navbar-nav li:hover ul {
+  display: block;
 }
 
 .navbar-light {
@@ -107,15 +117,6 @@ h1 {
   color: rgb(243, 243, 225);
 }
 
-.botonera_lista ul {
-  position: absolute;
-  display: none;
-}
-
-.navbar-nav li:hover ul {
-  display: block;
-}
-
 .navbar-toggler {
   margin: 0.25rem;
 }
@@ -125,8 +126,7 @@ h1 {
 footer {
   background-color: rgba(163, 165, 158, 0.4666666667);
 }
-
-.foot {
+footer .foot {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -134,81 +134,71 @@ footer {
   max-width: 1140px;
   margin: auto;
 }
-
-.botonera_f {
+footer .foot .botonera_f {
   margin: 0em 0.5em;
 }
-
-.botonera_f_tit {
+footer .foot .botonera_f .botonera_f_tit {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   padding: 0.4em;
   font-size: 1.2em;
   border-bottom: 1px solid black;
 }
-
-.botonera_f li {
+footer .foot .botonera_f ul li {
   text-decoration: none;
   list-style: none;
   text-align: flex-start;
   padding: 0.2em;
 }
-
-.botonera_f li a {
+footer .foot .botonera_f ul li a {
   text-decoration: none;
   color: black;
 }
-
-.redes {
+footer .foot .redes {
   display: flex;
   flex-direction: column;
   margin: 0em 0.5em;
 }
-
-.redes_tit {
+footer .foot .redes .redes_tit {
   margin-top: 0.5rem;
   padding: 0.4em;
   font-size: 1.2em;
   text-align: center;
   border-bottom: 1px solid black;
 }
-
-.redes_iconos {
+footer .foot .redes .redes_iconos {
   display: flex;
   justify-content: center;
   padding-top: 2rem;
 }
-
-.redes_link1 {
+footer .foot .redes .redes_iconos .redes_link1 {
   padding: 0.5em;
   margin-bottom: 2.5em;
 }
-
-.redes_link2 {
-  padding: 0.5em;
-  margin-bottom: 2.5em;
-}
-
-.redes-img {
+footer .foot .redes .redes_iconos .redes_link1 .redes-img {
   width: 3.12em;
 }
-
-.logo-tit-f {
+footer .foot .redes .redes_iconos .redes_link2 {
+  padding: 0.5em;
+  margin-bottom: 2.5em;
+}
+footer .foot .redes .redes_iconos .redes_link2 .redes-img {
+  width: 3.12em;
+}
+footer .foot .redes .logo-f .logo-tit-f {
   font-size: 1.8em;
   color: gray;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: unset;
   align-self: center;
 }
-
-.foot_contacto {
+footer .foot .foot_contacto {
   display: flex;
   flex-direction: column;
   text-align: start;
   margin: 0em 0.5em;
 }
-
-.foot_contacto_tit {
+footer .foot .foot_contacto .foot_contacto_tit {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   padding: 0.4rem;
@@ -216,26 +206,22 @@ footer {
   text-align: center;
   border-bottom: 1px solid black;
 }
-
-.foot_contacto_iconos {
+footer .foot .foot_contacto div .foot_contacto_iconos {
   display: flex;
   flex-direction: row;
   text-align: center;
 }
-
-.icono {
+footer .foot .foot_contacto div .foot_contacto_iconos .icono {
   width: 30px;
 }
-
-h5 {
+footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   text-align: center;
   font-size: 1em;
   font-weight: lighter;
   padding: 0.6rem;
 }
-
 @media screen and (max-width: 1140px) {
-  .foot {
+  footer .foot {
     max-width: 700px;
     margin: auto;
   }
@@ -245,11 +231,13 @@ h5 {
     font-size: 12px;
   }
 }
+
 /* ------------------------------- fin footer ------------------------------- */
 /* ---------------------------------- cuerpo home ---------------------------------- */
 .text-carousel {
   font-size: 2.5rem;
   font-family: "Open Sans", sans-serif;
+  color: white;
 }
 
 .container {
@@ -647,19 +635,6 @@ video {
 
 .form-row button:active {
   background-color: rgb(76, 132, 238);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "roboto";
-  font-weight: 300;
-  text-align: justify;
-  background-color: rgba(247, 244, 239, 0.904);
-  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
