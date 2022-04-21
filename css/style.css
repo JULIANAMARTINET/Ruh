@@ -325,7 +325,7 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
 /* -------------------------------- nosotras -------------------------------- */
 .nos_portada {
   display: grid;
-  background-image: url(../Image/fondo-nos.png);
+  background-image: url(../../img/fondo-nos.png);
   background-size: contain;
   max-width: 72rem;
   margin: auto;
