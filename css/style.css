@@ -410,20 +410,10 @@ h3 {
 /* ------------------------------ fin productos ----------------------------- */
 /* --------------------------------- mayorista -------------------------------- */
 .mayor_tit {
-  background-image: url("../Image/evento-portada.png");
-  width: 100%;
-  height: 15rem;
   display: grid;
-  place-content: center;
-}
-
-.mayor_tit p {
-  font-size: 10mm;
-  font-family: sans-serif;
-  font-weight: 500;
-  background-color: rgba(255, 255, 255, 0.514);
-  padding: 1rem;
-  color: rgb(78, 72, 72);
+  justify-items: center;
+  width: 70%;
+  margin: auto;
 }
 
 .container_mayor {
@@ -442,6 +432,70 @@ h3 {
   padding: 1rem;
 }
 
+.container-img {
+  width: 100%;
+  max-width: 1140px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px;
+  grid-gap: 20px;
+}
+
+.container-img .box-img figure {
+  width: 100%;
+  height: 100%;
+}
+
+.container-img .box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.evento-descripcion {
+  background-color: rgba(139, 85, 27, 0.363);
+  color: rgb(63, 44, 8);
+  text-align: center;
+  font-size: 1.2rem;
+  align-items: center;
+}
+.evento-descripcion figure {
+  margin-top: 2rem;
+}
+
+.container-img .box-img:nth-child(1) {
+  grid-column-start: span 2;
+}
+
+.container-img .box-img:nth-child(4) {
+  grid-row-start: span 2;
+}
+
+@media screen and (max-width: 770px) {
+  .container-img {
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: 200px;
+  }
+
+  .container-img .box-img:nth-child(1) {
+    grid-column-start: span 1;
+  }
+}
+@media screen and (max-width: 570px) {
+  .container-img {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .container-img .box-img img {
+    height: 200px;
+  }
+}
 /* ------------------------------- fin mayorista ------------------------------- */
 /* --------------------------------- + Info --------------------------------- */
 .section-info {
