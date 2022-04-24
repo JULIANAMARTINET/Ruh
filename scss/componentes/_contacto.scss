@@ -12,26 +12,30 @@
   .item_contacto {
     display: flex;
     justify-content: flex-start;
-  }
+    margin-left: 2em;
+   img {margin-right: 0.5em;}}
   
   .item_redes {
     display: flex;
     justify-content: center;
     padding: 0.4rem;
-  }
   
-  .item_redes img {
+   img {
     width: 15%;
     height: auto;
   }
   
-  .item_redes a {
+  a {
     align-items: center;
     padding: 0.4rem;
     text-decoration: none;
     color: black;
+    
+    }
   }
-  
+.r-instagram:hover { color: map-get($redes, instagram )}
+.r-facebook:hover { color: map-get($redes, facebook ) }
+
   .mapa {
     width: 100%;
     height: auto;
