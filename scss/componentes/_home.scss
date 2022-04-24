@@ -36,19 +36,9 @@
   }
   
   .btn {
-    background-color: rgb(148, 138, 138);
-    border-radius: 5%;
-    color: white;
-    border: none;
-    transition: all 1s
+  @extend %boton
   }
-  
-  .btn:hover {
-    background-color: #747c58;
-    color: rgb(243, 243, 225);
-    transform: scale(1.1);
-  }
-  
+
   .img_nosotras {
     width: 100%;
      padding: 3em; 
@@ -59,27 +49,13 @@
     text-align: center;
   }
   
-  .boton {
-    background-color: rgb(148, 138, 138);
-    border-radius: 5%;
+  .btn.nos {
+    @extend %boton;
+    display: flex;
+    justify-content: center;   
     padding: 0.6rem 0.8rem;
     margin: 1rem 4rem;
   }
-  
-  .boton.nos {
-    display: flex;
-    justify-content: center;
-    transition: all 1s;
-  }
-  
-  .boton.nos:hover {
-    transform: scale(1.2);
-    background-color: #747c58;
-    color: rgb(243, 243, 225)
-  }
-  
-  .boton a {
-    text-decoration: none;
-    color: white;
-  }
+
+
     /* ----------------------------- fin cuerpo home ---------------------------- */
