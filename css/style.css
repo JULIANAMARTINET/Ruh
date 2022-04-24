@@ -499,11 +499,6 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   margin: auto;
 }
 
-h3 {
-  font-size: 1.5rem;
-  text-decoration-line: underline;
-}
-
 #sahumerios {
   margin-top: 2rem;
 }
@@ -614,6 +609,10 @@ h3 {
 }
 /* ------------------------------- fin mayorista ------------------------------- */
 /* --------------------------------- + Info --------------------------------- */
+.body-info {
+  margin-bottom: 5em;
+}
+
 h2 {
   font-family: "Slabo 27px", serif;
   font-size: 2.5em;
@@ -628,58 +627,75 @@ h4 {
   margin-top: 1.5rem;
 }
 
+.text-acordeon {
+  font-size: 0.8em;
+  background-color: #e0e3d7;
+}
+.text-acordeon:not(.collapsed) {
+  color: rgb(243, 243, 225);
+  background-color: #747c58;
+}
+.text-acordeon:not(.collapsed)::after {
+  color: rgb(243, 243, 225);
+  background-color: #747c58;
+}
+
 .info1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   font-size: 1rem;
   line-height: 1.5rem;
 }
-
-.info2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  background-color: white;
-  margin-bottom: 2rem;
-}
-
-video {
-  width: 70%;
-  height: auto;
+.info1 video {
+  width: 90%;
   justify-self: center;
+  object-fit: cover;
+  height: 100%;
 }
-
-.main_art_video {
+@media screen and (max-width: 990px) {
+  .info1 video {
+    width: 70%;
+  }
+}
+.info1 .main_art_video {
   width: 100%;
   justify-self: start;
 }
-
-.main_art_tit {
+.info1 .main_art_video .main_art_tit {
   margin-bottom: 2rem;
 }
-
-.info1 img {
-  width: 65%;
-  height: auto;
-  border-radius: 1.5%;
-  box-shadow: 10px 5px 5px rgba(173, 140, 77, 0.589);
-  justify-self: center;
-}
-
-.info2 img {
-  padding: 1rem;
-  width: 75%;
-  height: auto;
-  justify-self: center;
-}
-
-.main_art {
+.info1 .main_art {
   width: 90%;
   display: flex;
   flex-direction: column;
   justify-self: center;
   align-self: center;
+}
+.info1 img {
+  width: 70%;
+  border-radius: 1.5%;
+  box-shadow: 10px 5px 5px rgba(173, 140, 77, 0.589);
+  justify-self: center;
+  object-fit: cover;
+  height: 100%;
+}
+@media screen and (max-width: 990px) {
+  .info1 img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 990px) {
+  .info1 {
+    grid-template-columns: 1fr;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.img-fluid {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 /* ------------------------------ Fin + Info ----------------------------- */
