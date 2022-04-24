@@ -15,11 +15,11 @@ body {
 /* --------------------------------- header --------------------------------- */
 header {
   z-index: 10;
+  background-color: #747c58;
   position: sticky;
-  transition: 0.7s;
-  margin-top: 20px;
   top: 0;
-  font-size: 1.3rem;
+  font-size: 1em;
+  /* ------------------------------- inicio nav ------------------------------- */
 }
 header .barra {
   max-width: 72rem;
@@ -29,7 +29,6 @@ header .barra {
 }
 header .barra .logo {
   display: flex;
-  display: none;
 }
 header .barra .logo .logo-img {
   width: 4em;
@@ -55,65 +54,29 @@ header .barra .redes_head .redes_head1 {
 header .barra .redes_head .redes_head1 img {
   width: 2.5em;
 }
-@media screen and (max-width: 576px) {
-  header {
-    font-size: 12px;
-  }
-}
-
-header.down {
-  background-color: #747c58;
-  font-size: 1rem;
-}
-header.down .logo {
-  display: flex;
-}
-header.down .logo .logo-img {
-  width: 4em;
-  border-radius: 20%;
-  padding: 0.5em;
-}
-header.down .logo h1 {
-  color: rgb(219, 206, 161);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1.8em;
-  font-weight: unset;
-  align-self: center;
-}
-header.down .navbar {
-  top: 0rem;
-}
-
-/* ------------------------------- fin header ------------------------------- */
-/* ------------------------------- inicio nav ------------------------------- */
-.navbar {
+header .navbar {
   box-shadow: 0 0 5px 0 rgb(221, 215, 215);
   z-index: 10;
   padding: 0px;
   position: relative;
-  top: 5em;
+  top: 0;
 }
-
-.button-nav {
+header .button-nav {
   background-color: rgb(243, 243, 225);
   color: gray;
 }
-
-.navbar-collapse {
+header .navbar-collapse {
   justify-content: center;
 }
-
-.navbar-nav li:hover ul {
+header .navbar-nav li:hover ul {
   display: block;
 }
-
-.nav-link {
+header .nav-link {
   color: rgb(243, 243, 225) !important;
   font-size: 1.2em;
   --clippy: polygon(0 0, 0 0, 0 98%, 0% 100%);
 }
-
-.nav-link::after {
+header .nav-link::after {
   content: "";
   display: block;
   background-color: white;
@@ -123,22 +86,138 @@ header.down .navbar {
   clip-path: var(--clippy);
   transition: clip-path 0.5s;
 }
-
-.nav-link:hover {
+header .nav-link:hover {
   color: rgb(37, 36, 36);
   --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
-
-.dropdown-menu {
-  background-color: transparent;
+header .dropdown-menu {
+  background-color: #747c58;
 }
-
-.dropdown-item {
+header .dropdown-item {
   color: rgb(243, 243, 225);
 }
-
-.navbar-toggler {
+header .navbar-toggler {
   margin: 0.25rem;
+}
+@media screen and (max-width: 576px) {
+  header {
+    font-size: 12px;
+  }
+}
+
+/* ------------------------------- fin nav ------------------------------- */
+/* --------------------------------- header --------------------------------- */
+#header-home {
+  z-index: 10;
+  position: sticky;
+  transition: 0.7s;
+  margin-top: 20px;
+  top: 0;
+  font-size: 1.3em;
+  background-color: transparent;
+  /* ------------------------------- inicio nav ------------------------------- */
+}
+#header-home .barra {
+  max-width: 72rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+#header-home .barra .logo {
+  display: flex;
+}
+#header-home .barra .logo .logo-img {
+  width: 4em;
+  border-radius: 20%;
+  padding: 0.5em;
+  opacity: 0;
+}
+#header-home .barra .logo h1 {
+  color: rgb(219, 206, 161);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 3em;
+  font-weight: unset;
+  align-self: center;
+}
+#header-home .barra .redes_head {
+  display: flex;
+  align-items: center;
+}
+#header-home .barra .redes_head .redes_head1 {
+  display: flex;
+  padding: 0em 0.5em;
+  width: 3.125em;
+}
+#header-home .barra .redes_head .redes_head1 img {
+  width: 2.5em;
+}
+#header-home.down {
+  background-color: #747c58;
+  font-size: 1rem;
+}
+#header-home.down .logo .logo-img {
+  opacity: 1;
+}
+#header-home.down .logo h1 {
+  color: rgb(219, 206, 161);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.8em;
+  font-weight: unset;
+  align-self: center;
+}
+#header-home.down .dropdown-menu {
+  background-color: #747c58;
+}
+#header-home .navbar {
+  box-shadow: 0 0 5px 0 rgb(221, 215, 215);
+  z-index: 10;
+  padding: 0px;
+  position: relative;
+  top: 0;
+  transition: top 0.3s;
+}
+#header-home .button-nav {
+  background-color: rgb(243, 243, 225);
+  color: gray;
+}
+#header-home .navbar-collapse {
+  justify-content: center;
+}
+#header-home .navbar-nav li:hover ul {
+  display: block;
+}
+#header-home .nav-link {
+  color: rgb(243, 243, 225) !important;
+  font-size: 1.2em;
+  --clippy: polygon(0 0, 0 0, 0 98%, 0% 100%);
+}
+#header-home .nav-link::after {
+  content: "";
+  display: block;
+  background-color: white;
+  width: 90%;
+  margin-top: 3px;
+  height: 3px;
+  clip-path: var(--clippy);
+  transition: clip-path 0.5s;
+}
+#header-home .nav-link:hover {
+  color: rgb(37, 36, 36);
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+#header-home .dropdown-menu {
+  background-color: transparent;
+}
+#header-home .dropdown-item {
+  color: rgb(243, 243, 225);
+}
+#header-home .navbar-toggler {
+  margin: 0.25rem;
+}
+@media screen and (max-width: 576px) {
+  #header-home {
+    font-size: 12px;
+  }
 }
 
 /* ------------------------------- fin nav ------------------------------- */
@@ -262,12 +341,15 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
 .item,
 .active {
   height: 100%;
-  overflow: hidden;
+}
+.item img,
+.active img {
+  object-fit: cover;
+  height: 100%;
 }
 
 .carousel-inner {
   height: 100%;
-  overflow: hidden;
 }
 
 .carousel {
@@ -275,7 +357,6 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   top: 0;
   height: 100vh;
   width: 100%;
-  overflow: hidden;
 }
 
 .text-carousel {
@@ -296,7 +377,7 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
 
 .cont-home {
   position: relative;
-  top: 35rem;
+  top: 40rem;
 }
 
 .cont-card {
