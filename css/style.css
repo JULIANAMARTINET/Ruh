@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&family=Slabo+27px&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Open+Sans:ital,wght@1,600;1,700&family=Slabo+27px&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -15,21 +15,24 @@ body {
 /* --------------------------------- header --------------------------------- */
 header {
   z-index: 10;
-  background-color: #747c58;
   position: sticky;
+  transition: 0.7s;
+  margin-top: 20px;
   top: 0;
+  font-size: 1.3rem;
 }
 header .barra {
-  max-width: 72em;
+  max-width: 72rem;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 header .barra .logo {
   display: flex;
+  display: none;
 }
 header .barra .logo .logo-img {
-  width: 70px;
+  width: 4em;
   border-radius: 20%;
   padding: 0.5em;
 }
@@ -58,16 +61,37 @@ header .barra .redes_head .redes_head1 img {
   }
 }
 
+header.down {
+  background-color: #747c58;
+  font-size: 1rem;
+}
+header.down .logo {
+  display: flex;
+}
+header.down .logo .logo-img {
+  width: 4em;
+  border-radius: 20%;
+  padding: 0.5em;
+}
+header.down .logo h1 {
+  color: rgb(219, 206, 161);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.8em;
+  font-weight: unset;
+  align-self: center;
+}
+header.down .navbar {
+  top: 0rem;
+}
+
 /* ------------------------------- fin header ------------------------------- */
 /* ------------------------------- inicio nav ------------------------------- */
 .navbar {
-  background-color: #747c58;
-  box-shadow: 0 0 5px 0 rgb(156, 151, 151);
-  border-top: 0.5px solid rgb(243, 243, 225);
+  box-shadow: 0 0 5px 0 rgb(221, 215, 215);
   z-index: 10;
-  position: sticky;
-  top: 4.5rem;
   padding: 0px;
+  position: relative;
+  top: 5em;
 }
 
 .button-nav {
@@ -83,13 +107,9 @@ header .barra .redes_head .redes_head1 img {
   display: block;
 }
 
-.navbar-light {
-  color: rgb(243, 243, 225) !important;
-}
-
 .nav-link {
   color: rgb(243, 243, 225) !important;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   --clippy: polygon(0 0, 0 0, 0 98%, 0% 100%);
 }
 
@@ -110,7 +130,7 @@ header .barra .redes_head .redes_head1 img {
 }
 
 .dropdown-menu {
-  background-color: #747c58;
+  background-color: transparent;
 }
 
 .dropdown-item {
@@ -239,15 +259,44 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
 
 /* ------------------------------- fin footer ------------------------------- */
 /* ---------------------------------- cuerpo home ---------------------------------- */
+.item,
+.active {
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
 .text-carousel {
-  font-size: 2.5rem;
-  font-family: "Open Sans", sans-serif;
-  color: white;
+  font-size: 3em;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: bold 800;
+  color: rgb(243, 243, 225);
+  margin-bottom: 5em;
+  background-color: rgba(129, 128, 125, 0.452);
+  border-radius: 5%;
+  box-shadow: 0 0 30px 0 rgb(167, 157, 157);
 }
 
 .container {
   max-width: 72em;
   margin: auto;
+}
+
+.cont-home {
+  position: relative;
+  top: 35rem;
 }
 
 .cont-card {

@@ -1,85 +1,116 @@
 /* ---------------------------------- cuerpo home ---------------------------------- */
-  
+
+.item,
+.active {
+  height: 100%;
+  overflow: hidden
+}
+
+.carousel-inner {
+  height: 100%;
+  overflow: hidden
+}
+
+.carousel {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden
+}
+
 .text-carousel {
-    font-size: 2.5rem;
-    font-family: 'Open Sans', sans-serif;
-    color: white
+  font-size: 3em;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold 800;
+  color: nth($colores, 2);
+  margin-bottom: 5em;
+  background-color: rgba(129, 128, 125, 0.452);
+  border-radius: 5%;
+  box-shadow: 0 0 30px 0 rgb(167, 157, 157);
+
+}
+
+.container {
+  max-width: 72em;
+  margin: auto;
+}
+
+.cont-home {
+  position: relative;
+  top: 35rem;
+}
+
+.cont-card {
+  display: flex;
+  flex-wrap: nowrap
+}
+
+.card-home {
+  box-shadow: 0 0 30px 0 rgb(90, 88, 88);
+}
+
+@media screen and (max-width: 576px) {
+  .row {
+    max-width: 400px;
+    margin: auto
   }
-  
-  .container {
-    max-width: 72em;
-    margin: auto;
-  }
-  
-  .cont-card {
-    display: flex;
-    flex-wrap: nowrap
-  }
-  
-  .card-home {
-    box-shadow: 0 0 30px 0 rgb(90, 88, 88);
-  }
-  
-  @media screen and (max-width: 576px) {
-    .row {
-      max-width: 400px;
-      margin: auto
-    }
-  }
-  
-  .card-img-top {
-    transition: all 1s;
-  }
-  
-  .card-img-top:hover {
-    transform: scale(0.9);
-  }
-  
-  .btn {
-    background-color: rgb(148, 138, 138);
-    border-radius: 5%;
-    color: white;
-    border: none;
-    transition: all 1s
-  }
-  
-  .btn:hover {
-    background-color: #747c58;
-    color: rgb(243, 243, 225);
-    transform: scale(1.1);
-  }
-  
-  .img_nosotras {
-    width: 100%;
-     padding: 3em; 
-  }
-  
-  .home-nosotras {
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .boton {
-    background-color: rgb(148, 138, 138);
-    border-radius: 5%;
-    padding: 0.6rem 0.8rem;
-    margin: 1rem 4rem;
-  }
-  
-  .boton.nos {
-    display: flex;
-    justify-content: center;
-    transition: all 1s;
-  }
-  
-  .boton.nos:hover {
-    transform: scale(1.2);
-    background-color: #747c58;
-    color: rgb(243, 243, 225)
-  }
-  
-  .boton a {
-    text-decoration: none;
-    color: white;
-  }
-    /* ----------------------------- fin cuerpo home ---------------------------- */
+}
+
+.card-img-top {
+  transition: all 1s;
+}
+
+.card-img-top:hover {
+  transform: scale(0.9);
+}
+
+.btn {
+  background-color: rgb(148, 138, 138);
+  border-radius: 5%;
+  color: white;
+  border: none;
+  transition: all 1s
+}
+
+.btn:hover {
+  background-color: #747c58;
+  color: rgb(243, 243, 225);
+  transform: scale(1.1);
+}
+
+.img_nosotras {
+  width: 100%;
+  padding: 3em;
+}
+
+.home-nosotras {
+  padding: 2rem;
+  text-align: center;
+}
+
+.boton {
+  background-color: rgb(148, 138, 138);
+  border-radius: 5%;
+  padding: 0.6rem 0.8rem;
+  margin: 1rem 4rem;
+}
+
+.boton.nos {
+  display: flex;
+  justify-content: center;
+  transition: all 1s;
+}
+
+.boton.nos:hover {
+  transform: scale(1.2);
+  background-color: #747c58;
+  color: rgb(243, 243, 225)
+}
+
+.boton a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ----------------------------- fin cuerpo home ---------------------------- */
