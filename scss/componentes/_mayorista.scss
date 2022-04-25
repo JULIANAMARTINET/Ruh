@@ -47,17 +47,17 @@
 }
 
 .evento-descripcion {
-  // background-color: rgba(139, 85, 27, 0.363);
   background-color: lighten(nth($colores, 3),20%);
   border: 2px solid nth($colores,1);
   border-radius: 2%;
   color: rgb(63, 44, 8);
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   align-items: center;
 
  figure {
    margin-top: 2rem;
+   a {font-size: 1em;}
   }
 }
 

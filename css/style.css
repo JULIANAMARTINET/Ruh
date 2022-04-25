@@ -570,11 +570,14 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   border-radius: 2%;
   color: rgb(63, 44, 8);
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   align-items: center;
 }
 .evento-descripcion figure {
   margin-top: 2rem;
+}
+.evento-descripcion figure a {
+  font-size: 1em;
 }
 
 .container-img .box-img:nth-child(1) {
@@ -711,7 +714,7 @@ h4 {
 .item_contacto {
   display: flex;
   justify-content: flex-start;
-  margin-left: 2em;
+  margin-left: 3em;
 }
 .item_contacto img {
   margin-right: 0.5em;
