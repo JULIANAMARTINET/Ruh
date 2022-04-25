@@ -1,56 +1,60 @@
 /* -------------------------------- contacto -------------------------------- */
-  
-  
-.contacto-tit {
-    font-size: 1.5rem;
-    text-align: center;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid gray;
-    margin-bottom: 1rem;
-  }
-  
-  .item_contacto {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 3em;
 
-   img {margin-right: 0.5em;}}
-  
-  .item_redes {
-    display: flex;
-    justify-content: center;
-    padding: 0.4rem;
-  
-   img {
-    width: 15%;
-    height: auto;
+
+.contacto-tit {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid gray;
+  margin-bottom: 1rem;
+}
+
+.item_contacto {
+  display: flex;
+  justify-content: center;
+  text-align: start;
+
+  img {
+    margin-right: 0.5em;
   }
-  
+  .wp-n { padding-right: 1em;}
+}
+
+.item_redes {
+  display: flex;
+  justify-content: center;
+  padding: 0.4rem;
+
   a {
     align-items: center;
     padding: 0.4rem;
     text-decoration: none;
     color: black;
-    
-    }
-  }
-.r-instagram:hover { color: map-get($redes, instagram )}
-.r-facebook:hover { color: map-get($redes, facebook ) }
 
-  .mapa {
-    width: 100%;
-    height: auto;
   }
-  
-  /* form  */
-  
-  .form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(226, 225, 225);
+
+  .r-instagram:hover {
+    color: map-get($redes, instagram)
   }
-  
+
+  .r-facebook:hover {
+    color: map-get($redes, facebook)
+  }
+}
+
+.mapa {
+  width: 100%;
+  height: auto;
+}
+
+/* form  */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(226, 225, 225);
+
   .form-tit {
     text-align: center;
     border-color: 1px solid rgb(228, 223, 223);
@@ -58,66 +62,69 @@
     margin: 0.5rem 0;
     padding: 0.4rem
   }
-  
+
   .contacto-form {
     border: 1px solid rgb(228, 223, 223);
     border-radius: 3px;
     width: 80%;
     margin: 0 0 1.5rem 0;
+
+    .form-row {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      label {
+        margin-bottom: 10px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="number"] {
+        background-color: white;
+        border: 1px solid rgb(163, 163, 167);
+        border-radius: 3px;
+        width: 100%;
+        padding: 8px;
+      }
+
+      textarea {
+        background-color: white;
+        border: 1px solid rgb(163, 163, 167);
+        border-radius: 3px;
+        margin-bottom: 10px;
+        padding: 7px;
+        min-height: 100px;
+        min-width: 100%;
+        resize: none
+      }
+
+      .instructions {
+        color: rgb(109, 107, 107);
+        margin-bottom: 20px;
+      }
+
+
+      button {
+        font-weight: bold;
+        color: white;
+        background-color: rgb(100, 157, 204);
+        border: none;
+        border-radius: 3px;
+        padding: 10px 30px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgb(131, 171, 243);
+        }
+
+        &:active {
+          background-color: rgb(76, 132, 238);
+        }
+      }
+    }
+
   }
-  
-  .form-row {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  
-  .form-row label {
-    margin-bottom: 10px;
-  }
-  
-  .form-row input[type="text"],
-  .form-row input[type="email"],
-  .form-row input[type="number"] {
-    background-color: white;
-    border: 1px solid rgb(163, 163, 167);
-    border-radius: 3px;
-    width: 100%;
-    padding: 8px;
-  }
-  
-  .form-row textarea {
-    background-color: white;
-    border: 1px solid rgb(163, 163, 167);
-    border-radius: 3px;
-    margin-bottom: 10px;
-    padding: 7px;
-    min-height: 100px;
-    min-width: 100%;
-    resize: none
-  }
-  
-  .form-row .instructions {
-    color: rgb(109, 107, 107);
-    margin-bottom: 20px;
-  }
-  
-  .form-row button {
-    font-weight: bold;
-    color: white;
-    background-color: rgb(100, 157, 204);
-    border: none;
-    border-radius: 3px;
-    padding: 10px 30px;
-    cursor: pointer;
-  }
-  
-  .form-row button:hover {
-    background-color: rgb(131, 171, 243);
-  }
-  
-  .form-row button:active {
-    background-color: rgb(76, 132, 238);
-  }
+}

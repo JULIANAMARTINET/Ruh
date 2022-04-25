@@ -1,51 +1,45 @@
 /* -------------------------------- nosotras -------------------------------- */
-  
 .nos_portada {
-    display: grid;
-    background-image: url(../../img/fondo-nos.png);
-    background-size: contain;
-    max-width: 72rem;
-    margin: auto
-  }
-  
+  display: grid;
+  background-image: url(../../img/fondo-nos.png);
+  background-size: contain;
+  max-width: 72rem;
+  margin: auto;
+
   .nos_portada_art {
     justify-self: center;
     width: 80%;
     margin: 1rem 1rem 5rem 1rem;
-  }
-  
-  @media screen and (max-width: 990px) {
-    .nos_portada_art {
+
+    p {
+      text-align: center;
+      font-size: 1.2em;
+    }
+
+    @media screen and (max-width: 990px) {
       width: 70%;
       font-size: 14px;
     }
-  
-    .nos_main_art {
-      justify-items: center;
-    }
-  }
-  
-  @media screen and (max-width: 770px) {
-    .nos_portada_art {
+
+    @media screen and (max-width: 770px) {
       width: 80%;
       font-size: 12px;
     }
-  
-    body {
-      font-size: 14px;
-    }
   }
-  
-  .nos_portada p {
-    text-align: center;
-    font-size: 1.2em;
+}
+
+.card-nos {
+  position: relative;
+  bottom: 4rem;
+
+  .nos_main_art {
+    justify-items: center;
+    width: 90%;
+    padding: 4rem 2rem 1rem 2rem;
+    margin: 0.5;
+    border: 2px solid gray;
   }
-  
-  .card-nos {
-    position: relative;
-    bottom: 4rem;
-  }
-  
+
   .nos_main_img {
     width: 80%;
     padding: 1rem;
@@ -54,13 +48,7 @@
     position: relative;
     top: 5rem;
   }
-  
-  .nos_main_art {
-    width: 90%;
-    padding: 4rem 2rem 1rem 2rem;
-    margin: 0.5;
-    border: 2px solid gray;
-  }
-  
-  /* ------------------------------ fin nosotras ------------------------------ */
-  
+}
+
+
+/* ------------------------------ fin nosotras ------------------------------ */

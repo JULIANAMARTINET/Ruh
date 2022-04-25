@@ -1,84 +1,77 @@
 /* ---------------------------------- cuerpo home ---------------------------------- */
 
-.item,
-.active {
-  height: 100%;
-
-  img {
-    object-fit: cover;
-    height: 100%;
-  }
-}
-
-.carousel-inner {
-  height: 100%;
-}
-
 .carousel {
   position: absolute;
   top: 0;
   height: 100vh;
   width: 100%;
-}
 
-.text-carousel {
-  font-size: 3em;
-  font-family: 'Julius Sans One', sans-serif;
-  font-weight: bold 800;
-  color: nth($colores, 2);
-  margin-bottom: 5em;
-  background-color: rgba(129, 128, 125, 0.452);
-  border-radius: 5%;
-  box-shadow: 0 0 30px 0 rgb(167, 157, 157);
-}
+  .carousel-inner {
+    height: 100%;
 
-.container {
-  max-width: 72em;
-  margin: auto;
+    .active {
+      height: 100%;
+
+      img {
+        object-fit: cover;
+        height: 100%;
+      }
+
+      .text-carousel {
+        font-size: 3em;
+        font-family: 'Julius Sans One', sans-serif;
+        font-weight: bold 800;
+        color: nth($colores, 2);
+        margin-bottom: 5em;
+        background-color: rgba(129, 128, 125, 0.452);
+        border-radius: 5%;
+        box-shadow: 0 0 30px 0 rgb(167, 157, 157);
+      }
+    }
+  }
 }
 
 .body-home {
   position: relative;
   top: 40rem;
-}
 
-.cont-card {
-  display: flex;
-  flex-wrap: nowrap
-}
+  .container {
+    max-width: 72em;
+    margin: auto;
 
-.card-home {
-  box-shadow: 0 0 30px 0 rgb(90, 88, 88);
-}
-
-  @media screen and (max-width: 576px) {
     .row {
-      max-width: 400px;
-      margin: auto
+      @media screen and (max-width: 576px) {
+        max-width: 400px;
+        margin: auto
+      }
+
+      .cont-card {
+        display: flex;
+        flex-wrap: nowrap;
+
+        .card-home {
+          box-shadow: 0 0 30px 0 rgb(90, 88, 88);
+
+          .card-img-top {
+            transition: all 1s;
+
+            &:hover {
+              transform: scale(0.9);
+            }
+          }
+
+          .btn {
+            @extend %boton
+          }
+        }
+      }
     }
   }
+}
 
-  .card-img-top {
-    transition: all 1s;
-  }
-
-  .card-img-top:hover {
-    transform: scale(0.9);
-  }
-
-  .btn {
-    @extend %boton
-  }
-
-  .img_nosotras {
-    width: 100%;
-    padding: 3em;
-  }
-
-  .home-nosotras {
-    padding: 2rem;
-    text-align: center;
-  }
+.home-nosotras {
+  padding: 2rem;
+  text-align: center;
 
   .btn.nos {
     @extend %boton;
@@ -87,6 +80,11 @@
     padding: 0.6rem 0.8rem;
     margin: 1rem 4rem;
   }
+}
 
+.img_nosotras {
+  width: 100%;
+  padding: 3em;
+}
 
 // fin cuerpo home 
