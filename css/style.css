@@ -407,6 +407,15 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   padding: 2rem;
   text-align: center;
 }
+.home-nosotras h2 {
+  font-family: "Slabo 27px", serif;
+  font-size: 2.5em;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.5em 0em;
+  border-bottom: 1px solid gray;
+  margin-top: 1em;
+}
 .home-nosotras .btn.nos {
   display: flex;
   justify-content: center;
@@ -431,6 +440,15 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   justify-self: center;
   width: 80%;
   margin: 1rem 1rem 5rem 1rem;
+}
+.nos_portada .nos_portada_art h2 {
+  font-family: "Slabo 27px", serif;
+  font-size: 2.5em;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.5em 0em;
+  border-bottom: 1px solid gray;
+  margin: 1em 3em;
 }
 .nos_portada .nos_portada_art p {
   text-align: center;
@@ -475,6 +493,15 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   max-width: 1140px;
   margin: auto;
 }
+.tit h2 {
+  font-family: "Slabo 27px", serif;
+  font-size: 2.5em;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.5em 0em;
+  border-bottom: 1px solid gray;
+  margin: 1em 3em;
+}
 
 #sahumerios {
   margin-top: 2rem;
@@ -500,6 +527,15 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   justify-items: center;
   width: 70%;
   margin: auto;
+}
+.mayor_tit h2 {
+  font-family: "Slabo 27px", serif;
+  font-size: 2.5em;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.5em 0em;
+  border-bottom: 1px solid gray;
+  margin: 1em 0em;
 }
 
 .container-img {
@@ -571,57 +607,62 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
 /* ------------------------------- fin mayorista ------------------------------- */
 /* --------------------------------- + Info --------------------------------- */
 .body-info {
-  margin-bottom: 5em;
+  max-width: 72em;
+  margin: auto;
 }
 .body-info h2 {
   font-family: "Slabo 27px", serif;
   font-size: 2.5em;
   font-weight: 500;
   text-align: center;
-  padding: 1em 0em;
+  padding: 0.5em 0em;
   border-bottom: 1px solid gray;
+  margin: 1em 6em;
 }
-.body-info .text-acordeon {
+.body-info .container {
+  margin-bottom: 3em;
+}
+.body-info .container .text-acordeon {
   font-size: 0.8em;
   background-color: #e0e3d7;
 }
-.body-info .text-acordeon:not(.collapsed) {
+.body-info .container .text-acordeon:not(.collapsed) {
   color: rgb(243, 243, 225);
   background-color: #747c58;
 }
-.body-info .text-acordeon:not(.collapsed)::after {
+.body-info .container .text-acordeon:not(.collapsed)::after {
   color: rgb(243, 243, 225);
   background-color: #747c58;
 }
-.body-info .info1 {
+.body-info .container .info1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   font-size: 1rem;
   line-height: 1.5rem;
 }
-.body-info .info1 video {
+.body-info .container .info1 video {
   width: 90%;
   justify-self: center;
   object-fit: cover;
   height: 100%;
 }
 @media screen and (max-width: 990px) {
-  .body-info .info1 video {
+  .body-info .container .info1 video {
     width: 70%;
   }
 }
-.body-info .info1 .main_art_video {
+.body-info .container .info1 .main_art_video {
   width: 100%;
   justify-self: start;
 }
-.body-info .info1 .main_art {
+.body-info .container .info1 .main_art {
   width: 90%;
   display: flex;
   flex-direction: column;
   justify-self: center;
   align-self: center;
 }
-.body-info .info1 img {
+.body-info .container .info1 img {
   width: 70%;
   border-radius: 1.5%;
   box-shadow: 10px 5px 5px rgba(173, 140, 77, 0.589);
@@ -630,22 +671,22 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   height: 100%;
 }
 @media screen and (max-width: 990px) {
-  .body-info .info1 img {
+  .body-info .container .info1 img {
     width: 70%;
   }
 }
 @media screen and (max-width: 990px) {
-  .body-info .info1 {
+  .body-info .container .info1 {
     grid-template-columns: 1fr;
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
-.body-info h4 {
+.body-info .container h4 {
   margin-bottom: 2rem;
   margin-top: 1.5rem;
 }
-.body-info .img-fluid {
+.body-info .container .img-fluid {
   object-fit: cover;
   height: 100%;
   width: 100%;
