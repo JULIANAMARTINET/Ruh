@@ -30,7 +30,7 @@
 
   .evento-descripcion {
     background-color: lighten(nth($colores, 3), 20%);
-    border: 2px solid nth($colores, 1);
+    border: 5px solid nth($colores, 3);
     border-radius: 2%;
     color: rgb(63, 44, 8);
     text-align: center;

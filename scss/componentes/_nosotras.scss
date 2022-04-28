@@ -1,65 +1,86 @@
 /* -------------------------------- nosotras -------------------------------- */
+.body-nosotras {
+ 
 
-.nos_portada {
-  display: grid;
-  background-image: url(../../img/fondo-nos.png);
-  background-size: contain;
-  max-width: 72rem;
-  margin: auto;
+  .nos_portada {
+    display: grid;
+    background-size: contain;
+    max-width: 55em;
+    margin: auto;
 
-  .nos_portada_art {
-    justify-self: center;
-    width: 80%;
-    margin: 1rem 1rem 5rem 1rem;
-
-    h2 {
-      font-family: "Slabo 27px", serif;
-      font-size: 2.5em;
-      font-weight: 500;
-      text-align: center;
-      padding: 0.5em 0em;
-      border-bottom: 1px solid gray;
-      margin: 1em 3em
-     }
-
-    p {
-      text-align: center;
-      font-size: 1.2em;
-    }
-
-    @media screen and (max-width: 990px) {
-      width: 70%;
-      font-size: 14px;
-    }
-
-    @media screen and (max-width: 770px) {
+    .nos_portada_art {
+      justify-self: center;
       width: 80%;
-      font-size: 12px;
+
+      h2 {
+        font-family: "Slabo 27px", serif;
+        font-size: 2.5em;
+        font-weight: 500;
+        text-align: center;
+        padding: 0.5em 0em;
+        border-bottom: 1px solid gray;
+        margin: 1em 2em
+      }
+
+      p {
+        text-align: center;
+        font-size: 1.2em;
+      }
+
+      @media screen and (max-width: 990px) {
+        width: 70%;
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: 770px) {
+        width: 80%;
+        font-size: 12px;
+      }
     }
   }
+
+  .cont-colum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 60%;
+      border-radius: 2%;
+      position: relative;
+      top: 3rem;
+      filter: grayscale(100%);
+      transition: all 0.5s;
+
+      &:hover {
+        filter: none;
+        transform: scale(1.1);
+      }
+
+      @media screen and (max-width: 500px) {
+        width: 80%;
+      }
+    }
+
+    .nos_main_art {
+      // width: 90%;
+      padding: 4em 3em 0em 3em;
+      margin: 0em 5em 1em 5em;
+      border: 2px solid gray;
+
+      @media screen and (max-width: 1200px) {
+        margin: 0em 3em 1em 3em
+      }
+
+      @media screen and (max-width: 500px) {
+        margin: 0em 0.5em 1em 0.5em;
+        padding: 3em 1em 0em 1em;
+      }
+    }
+
+  }
 }
 
-.card-nos {
-  position: relative;
-  bottom: 4rem;
-
-  .nos_main_art {
-    justify-items: center;
-    width: 90%;
-    padding: 4rem 2rem 1rem 2rem;
-    margin: 0.5;
-    border: 2px solid gray;
-  }
-
-  .nos_main_img {
-    width: 80%;
-    padding: 1rem;
-    margin: 0rem 2rem 2rem 2rem;
-    border-radius: 2%;
-    position: relative;
-    top: 5rem;
-  }
-}
 
 
 /* ------------------------------ fin nosotras ------------------------------ */

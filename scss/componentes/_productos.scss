@@ -15,21 +15,34 @@
    }
  }
 
- #sahumerios {
-   margin-top: 2rem;
+ .prod-tit {
+   margin: 2rem 0rem 0rem 5rem;
  }
 
- #sahumos {
-   margin-top: 2rem;
+ .card-row {
+   @media screen and (max-width: 991px) {
+     justify-content: center
+   }
+
+   .cont-card {
+     display: flex;
+     flex-wrap: nowrap;
+
+     @media screen and (max-width: 575px) {
+       justify-content: center;
+     }
+   }
+
+   .card-home {
+     @media screen and (max-width: 575px) {
+       margin: 0rem 2rem;
+       width: 70%;
+       height: auto;
+     }
+   }
  }
 
- #velas {
-   margin-top: 2rem;
- }
 
- .item_img {
-   width: 18rem;
-   padding: 0.5rem 0.5rem;
- }
+
 
  /* ------------------------------ fin productos ----------------------------- */
