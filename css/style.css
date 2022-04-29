@@ -143,6 +143,10 @@ header .navbar-toggler {
   padding: 0.5em;
   opacity: 0;
 }
+#header-home .barra .logo .logo-s-fondo {
+  width: 5em;
+  padding: 0.5em;
+}
 #header-home .barra .logo h1 {
   color: rgb(219, 206, 161);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -168,6 +172,9 @@ header .navbar-toggler {
 }
 #header-home.down .logo .logo-img {
   opacity: 1;
+}
+#header-home.down .logo .logo-s-fondo {
+  display: none;
 }
 #header-home.down .logo h1 {
   color: rgb(219, 206, 161);
@@ -298,8 +305,17 @@ footer .foot .redes .redes_iconos .redes_link2 {
 footer .foot .redes .redes_iconos .redes_link2 .redes-img {
   width: 3.12em;
 }
+footer .foot .redes .logo-f {
+  display: flex;
+  margin-bottom: 1em;
+}
+footer .foot .redes .logo-f img {
+  width: 5em;
+  padding-right: 0.5em;
+  filter: grayscale(1);
+}
 footer .foot .redes .logo-f .logo-tit-f {
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: gray;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: unset;
@@ -403,6 +419,15 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
 .body-home .container .row .cont-card .card-home .card-img-top:hover {
   transform: scale(0.9);
 }
+.deco-fila {
+  margin-top: 4em;
+  background-color: rgba(250, 249, 249, 0.788);
+  border-radius: 20px;
+}
+.deco-fila img {
+  filter: grayscale(1);
+}
+
 .home-nosotras {
   padding: 2rem;
   text-align: center;
@@ -413,7 +438,7 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   font-weight: 500;
   text-align: center;
   padding: 0.5em 0em;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.603);
   margin-top: 1em;
 }
 .home-nosotras .btn.nos {
