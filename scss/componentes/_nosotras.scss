@@ -1,26 +1,24 @@
 /* -------------------------------- nosotras -------------------------------- */
-.body-nosotras {
- 
 
   .nos_portada {
-    display: grid;
-    background-size: contain;
-    max-width: 55em;
+    max-width: 50em;
     margin: auto;
+
+    h2 {
+      font-family: "Slabo 27px", serif;
+      font-size: 2.5em;
+      font-weight: 500;
+      text-align: center;
+      padding: 0.5em 0em;
+      border-bottom: 1px solid gray;
+      margin: 1em
+    }
 
     .nos_portada_art {
       justify-self: center;
-      width: 80%;
-
-      h2 {
-        font-family: "Slabo 27px", serif;
-        font-size: 2.5em;
-        font-weight: 500;
-        text-align: center;
-        padding: 0.5em 0em;
-        border-bottom: 1px solid gray;
-        margin: 1em 2em
-      }
+      padding: 1em 4em;
+      background-color: lighten(nth($colores, 3), 18%) ;
+      border-radius: 20px;
 
       p {
         text-align: center;
@@ -79,7 +77,7 @@
     }
 
   }
-}
+
 
 
 

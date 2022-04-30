@@ -35,6 +35,10 @@ footer .foot .redes .redes_iconos {
   align-items: center;
 }
 
+.disclaimer {
+  display: none;
+}
+
 /* --------------------------------- header --------------------------------- */
 header {
   z-index: 10;
@@ -454,47 +458,48 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
 }
 
 /* -------------------------------- nosotras -------------------------------- */
-.body-nosotras .nos_portada {
-  display: grid;
-  background-size: contain;
-  max-width: 55em;
+.nos_portada {
+  max-width: 50em;
   margin: auto;
 }
-.body-nosotras .nos_portada .nos_portada_art {
-  justify-self: center;
-  width: 80%;
-}
-.body-nosotras .nos_portada .nos_portada_art h2 {
+.nos_portada h2 {
   font-family: "Slabo 27px", serif;
   font-size: 2.5em;
   font-weight: 500;
   text-align: center;
   padding: 0.5em 0em;
   border-bottom: 1px solid gray;
-  margin: 1em 2em;
+  margin: 1em;
 }
-.body-nosotras .nos_portada .nos_portada_art p {
+.nos_portada .nos_portada_art {
+  justify-self: center;
+  padding: 1em 4em;
+  background-color: #f4f1e3;
+  border-radius: 20px;
+}
+.nos_portada .nos_portada_art p {
   text-align: center;
   font-size: 1.2em;
 }
 @media screen and (max-width: 990px) {
-  .body-nosotras .nos_portada .nos_portada_art {
+  .nos_portada .nos_portada_art {
     width: 70%;
     font-size: 14px;
   }
 }
 @media screen and (max-width: 770px) {
-  .body-nosotras .nos_portada .nos_portada_art {
+  .nos_portada .nos_portada_art {
     width: 80%;
     font-size: 12px;
   }
 }
-.body-nosotras .cont-colum {
+
+.cont-colum {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.body-nosotras .cont-colum img {
+.cont-colum img {
   width: 60%;
   border-radius: 2%;
   position: relative;
@@ -502,27 +507,27 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   filter: grayscale(100%);
   transition: all 0.5s;
 }
-.body-nosotras .cont-colum img:hover {
+.cont-colum img:hover {
   filter: none;
   transform: scale(1.1);
 }
 @media screen and (max-width: 500px) {
-  .body-nosotras .cont-colum img {
+  .cont-colum img {
     width: 80%;
   }
 }
-.body-nosotras .cont-colum .nos_main_art {
+.cont-colum .nos_main_art {
   padding: 4em 3em 0em 3em;
   margin: 0em 5em 1em 5em;
   border: 2px solid gray;
 }
 @media screen and (max-width: 1200px) {
-  .body-nosotras .cont-colum .nos_main_art {
+  .cont-colum .nos_main_art {
     margin: 0em 3em 1em 3em;
   }
 }
 @media screen and (max-width: 500px) {
-  .body-nosotras .cont-colum .nos_main_art {
+  .cont-colum .nos_main_art {
     margin: 0em 0.5em 1em 0.5em;
     padding: 3em 1em 0em 1em;
   }
@@ -660,6 +665,11 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   max-width: 72em;
   margin: auto;
 }
+@media screen and (max-width: 570px) {
+  .body-info {
+    font-size: 12px;
+  }
+}
 .body-info h2 {
   font-family: "Slabo 27px", serif;
   font-size: 2.5em;
@@ -668,6 +678,19 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   padding: 0.5em 0em;
   border-bottom: 1px solid gray;
   margin: 1em 6em;
+}
+@media screen and (max-width: 570px) {
+  .body-info h2 {
+    margin: 1em 2.5em;
+  }
+}
+.body-info .text-naturaleza {
+  margin: 0em 8em 2em 8em;
+}
+@media screen and (max-width: 570px) {
+  .body-info .text-naturaleza {
+    margin: 0em 2em 2em 2em;
+  }
 }
 .body-info .container {
   margin-bottom: 3em;
@@ -687,8 +710,8 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
 .body-info .container .info1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1em;
+  line-height: 1.5em;
 }
 .body-info .container .info1 video {
   width: 90%;
@@ -728,13 +751,13 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
 @media screen and (max-width: 990px) {
   .body-info .container .info1 {
     grid-template-columns: 1fr;
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1em;
+    line-height: 1.5em;
   }
 }
 .body-info .container h4 {
-  margin-bottom: 2rem;
-  margin-top: 1.5rem;
+  margin-bottom: 2em;
+  margin-top: 1.5em;
 }
 .body-info .container .img-fluid {
   object-fit: cover;
