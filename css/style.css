@@ -35,10 +35,6 @@ footer .foot .redes .redes_iconos {
   align-items: center;
 }
 
-.disclaimer {
-  display: none;
-}
-
 /* --------------------------------- header --------------------------------- */
 header {
   z-index: 10;
@@ -484,12 +480,14 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
 @media screen and (max-width: 990px) {
   .nos_portada .nos_portada_art {
     width: 70%;
+    margin: auto;
     font-size: 14px;
   }
 }
 @media screen and (max-width: 770px) {
   .nos_portada .nos_portada_art {
     width: 80%;
+    margin: auto;
     font-size: 12px;
   }
 }
