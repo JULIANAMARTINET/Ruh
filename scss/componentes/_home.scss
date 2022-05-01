@@ -70,11 +70,15 @@
 }
 
 
-.deco-fila { margin-top: 4em;
+.deco-fila {
+  margin-top: 4em;
   background-color: rgba(250, 249, 249, 0.788);
-border-radius:  20px;
+  border-radius: 20px;
 
-img {filter: grayscale(1);}}
+  img {
+    filter: grayscale(1);
+  }
+}
 
 .home-nosotras {
   padding: 2rem;
@@ -87,12 +91,12 @@ img {filter: grayscale(1);}}
     text-align: center;
     padding: 0.5em 0em;
     border-bottom: 1px solid rgba(128, 128, 128, 0.603);
-    margin-top: 1em }
+    margin-top: 1em
+  }
 
   .btn.nos {
     @extend %boton;
-    display: flex;
-    justify-content: center;
+    @include ubicacion (flex, center, "", "");
     padding: 0.6rem 0.8rem;
     margin: 1rem 4rem;
   }

@@ -111,9 +111,7 @@
 
        div {
          .foot_contacto_iconos {
-           display: flex;
-           flex-direction: row;
-           text-align: center;
+           @include ubicacion (flex, "", center, row);
 
            .icono {
              width: 30px;

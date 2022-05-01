@@ -8,11 +8,10 @@ header {
     font-size: 1em;
 
     .barra {
+        @include ubicacion (flex, center, "", "");
         max-width: 72rem;
         margin: auto;
-        display: flex;
-        justify-content: center;
-     
+
         .logo {
             display: flex;
 

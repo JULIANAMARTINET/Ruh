@@ -1,29 +1,28 @@
 /* -------------------------------- contacto -------------------------------- */
 
-
 .contacto-tit {
   font-size: 1.5rem;
   text-align: center;
   padding-bottom: 1rem;
   border-bottom: 1px solid gray;
-  margin-top: 1rem;
   margin-top: 3rem
 }
 
 .item_contacto {
-  display: flex;
-  justify-content: center;
+  @include ubicacion (flex, center, "", "");
   text-align: start;
 
   img {
     margin-right: 0.5em;
   }
-  .wp-n { padding-right: 1em;}
+
+  .wp-n {
+    padding-right: 1em;
+  }
 }
 
 .item_redes {
-  display: flex;
-  justify-content: center;
+  @include ubicacion (flex, center, "", "");
   padding: 0.4rem;
 
   a {
@@ -50,9 +49,7 @@
 /* form  */
 
 .form-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include ubicacion (flex, "", center, column);
   background-color: rgb(226, 225, 225);
 
   .form-tit {
@@ -70,11 +67,9 @@
     margin: 0 0 1.5rem 0;
 
     .form-row {
-      margin-bottom: 20px;
-      display: flex;
-      justify-content: flex-start;
-      flex-direction: column;
+      @include ubicacion (flex, flex-start, "", column);
       flex-wrap: wrap;
+      margin-bottom: 20px;
 
       label {
         margin-bottom: 10px;
@@ -106,7 +101,6 @@
         margin-bottom: 20px;
       }
 
-
       button {
         font-weight: bold;
         color: white;
@@ -125,6 +119,5 @@
         }
       }
     }
-
   }
 }
