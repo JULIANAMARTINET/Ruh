@@ -14,13 +14,18 @@
     <meta property="og:description"
         content="Velas aromaticas 100% cera vegetal y variedad de sahumos con distintas esencias">
     <!-- <meta property="og:url" content="url"> pendiente hasta subir  -->
-   <meta property="og:image" content="https://ruh-esencia.000webhostapp.com/logos/logo-ovalado.png">
+    <meta property="og:image" content="https://ruh-esencia.000webhostapp.com/logos/logo-ovalado.png">
 
-   <link rel="shortcut icon" href="logos/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="logos/favicon.png" type="image/x-icon">
 
     <!-- enlance bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <!-- link to the CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.3.3/dist/css/splide.min.css">
+
     <!-- enlace css  -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -129,68 +134,107 @@
 
     <main class="body-home">
 
+
+
+
         <!-- seccion 2 -->
 
-        <section class="container">
-            <article class="row justify-content-center">
-                <div class="col-md-4 col-sm-9 p-4 mt-5 cont-card">
-                    <div class="card card-home">
-                        <img src="img/home1.png" class="card-img-top" alt="Productos">
-                        <div class="card-body">
-                            <p class="card-text">Te mostramos nuestra variedad de productos y aromas, elegi el que mas
-                                se
-                                conecte con tus sentidos.</p>
-                            <a href="productos.html" class="btn btn-primary">Productos</a>
-                        </div>
-                    </div>
+        <div class="container">
+            <div class="row h-100 justify-content-center">
+                <div class="col-lg-4 col-md-6 align-self-center">
+                    <h3 class="tit-segunda-section">PRODUCTOS NATURALES</h3>
+                    <p class="text-imp">Velas 100% origen vegetal con variedad de aromas y flores
+                        naturales</p>
+                    <a href="productos.html" class="btn btn-primary">Ver Productos</a>
                 </div>
-                <div class="col-md-4 col-sm-9 p-4 mt-5 cont-card">
-                    <div class="card card-home">
-                        <img src="img/home2.png" class="card-img-top" alt="Curiosidades">
-                        <div class="card-body">
-                            <p class="card-text">Te contamos el uso y curiosidades de nuestros productos y te
-                                compartimos
-                                info. util para cuidar y estar en contacto con la naturaleza.</p>
-                            <a href="info.html" class="btn btn-primary">Curiosidades</a>
+                <div class="col-lg-8 col-md-10 col-sm-12">
+                    <article class="row justify-content-center">
+                        <div class="col-md-5 col-sm-9 p-2 mt-4 d-flex flex-nowrap">
+                            <div class="card card-home">
+                                <a href="mayorista.html" class="card-img-top">
+                                    <img src="img/home3.png" alt="Mayorista"></a>
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <p class="card-text">Sabias que tambien podes vender nustros productos en tu
+                                        local? o
+                                        eleginos
+                                        para souvenir de tu boda o evento.</p>
+                                    <a href="mayorista.html" class="btn btn-primary">Mayorista</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-9 p-4 mt-5 cont-card">
-                    <div class="card card-home">
-                        <img src="img/home3.png" class="card-img-top" alt="Mayorista">
-                        <div class="card-body">
-                            <p class="card-text">Sabias que tambien podes vender nustros productos en tu local? o
-                                eleginos
-                                para souvenir de tu boda o evento.</p>
-                            <a href="mayorista.html" class="btn btn-primary">Mayorista</a>
+                        <div class="col-md-5 col-sm-9 p-2 mt-4 d-flex flex-nowrap">
+                            <div class="card card-home">
+                                <a href="mayorista.html" class="card-img-top"> <img src="img/home2.png"
+                                        alt="Curiosidades"></a>
+
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <p class="card-text">Te contamos el uso y curiosidades de nuestros productos y
+                                        te
+                                        compartimos
+                                        info. util para cuidar y estar en contacto con la naturaleza.</p>
+                                    <a href="info.html" class="btn btn-primary">Curiosidades</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
-            </article>
+            </div>
+        </div>
+
+
+        <section class="productos-destacados">
+            <h2>Productos Destacados</h2>
+            <div class="container-sm">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-md-10">
+                        <section id="thumbnail-carousel" class="splide"
+                            aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel.">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <img src="img/prod-bombitas.png" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="img/prod-Pastillas.png" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="img/prod-siete-chacras.png" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="img/prod-sahumadores.png" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="img/prod-velas.png" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="img/Prod-Palo-Santo.png" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="img/prod-velitas.png" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+
+                    </div>
+
+                </div>
+            </div>
         </section>
 
-
-<div class="container">
-    <div class="row deco-fila justify-content-center">
-        <div class="col d-flex justify-content-center"> <img src="logos/ic-planta.png" alt="" width=60> </div>
-        <div class="col d-flex justify-content-center"><img src="logos/ic-reciclaje.png" alt="" width=60> </div>
-        <div class="col d-flex justify-content-center"><img src="logos/ic-planta.png" alt="" width=60></div>
-        <div class="col d-flex justify-content-center"><img src="logos/ic-reciclaje.png" alt="" width=60></div>
-    </div>
-</div>
 
 
         <!-- seccion 3 -->
 
         <section class="container">
             <article class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 home-nosotras">
-                    <h2>Nosotras </h2>
+                <div class="col-lg-7 col-md-8 col-sm-12 align-self-center">
+                    <img class="img_nosotras" src="img/nosotras.png" alt="Nosotras">
+                </div>
+                <div class="col-lg-4 col-md-6 home-nosotras align-self-center">
+                    <h3>Nosotras</h3>
                     <p>Te compartimos un poco de nosotras y de quienes estan atras de Ruh.</p>
                     <div class="btn nos"><a href="nosotras.html">CONOCENOS</a></div>
-                </div>
-                <div class="col-lg-8 col-md-9">
-                    <img class="img_nosotras" src="img/nosotras.png" alt="Nosotras">
                 </div>
             </article>
         </section>
@@ -211,7 +255,7 @@
                         <li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
-    
+
                 <div class="redes">
                     <div class="redes_tit">Sigamos conectados</div>
                     <div class="redes_iconos">
@@ -222,10 +266,10 @@
                     </div>
                     <div class="logo-f">
                         <img src="logos/logo-sinfondo.png" alt="logo">
-                        <p class="logo-tit-f">| Ruh - Esencia |</p>
+                        <p class="logo-tit-f">Ruh - Esencia</p>
                     </div>
                 </div>
-    
+
                 <section class="foot_contacto">
                     <div class="foot_contacto_tit">Contactanos</div>
                     <div>
@@ -251,6 +295,11 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.3.3/dist/js/splide.min.js"></script>
+    <script>
+        new Splide('.splide').mount();
+    </script>
+
 </body>
 
 </html>

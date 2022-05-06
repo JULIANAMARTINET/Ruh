@@ -1,30 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Open+Sans:ital,wght@1,600;1,700&family=Slabo+27px&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Open+Sans:ital,wght@1,600;1,700&family=Poppins:wght@300&family=Raleway&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: "roboto";
-  font-weight: 300;
+  font-family: "Raleway", sans-serif;
   text-align: justify;
   background-color: rgba(247, 244, 239, 0.904);
   font-size: 16px;
 }
 
-.container-img .evento-descripcion figure .btn, .home-nosotras .btn.nos, .body-home .container .row .cont-card .card-home .btn {
+h2, h3, h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+.container-img .evento-descripcion figure .btn, .body-home .home-nosotras .btn.nos, .body-home .container .card-home .btn, .body-home .container .btn {
   background-color: rgb(148, 138, 138);
   border-radius: 5%;
   color: white;
   border: none;
   transition: all 1s;
 }
-.container-img .evento-descripcion figure .btn:hover, .home-nosotras .btn.nos:hover, .body-home .container .row .cont-card .card-home .btn:hover {
+.container-img .evento-descripcion figure .btn:hover, .body-home .home-nosotras .btn.nos:hover, .body-home .container .btn:hover {
   background-color: rgb(219, 206, 161);
   color: white;
   transform: scale(1.1);
 }
-.container-img .evento-descripcion figure .btn a, .home-nosotras .btn.nos a, .body-home .container .row .cont-card .card-home .btn a {
+.container-img .evento-descripcion figure .btn a, .body-home .home-nosotras .btn.nos a, .body-home .container .card-home .btn a, .body-home .container .btn a {
   text-decoration: none;
   color: white;
 }
@@ -45,10 +48,12 @@ header {
   /* ------------------------------- inicio nav ------------------------------- */
 }
 header .barra {
-  max-width: 72rem;
-  margin: auto;
   display: flex;
   justify-content: center;
+  align-items: "";
+  flex-direction: "";
+  max-width: 72rem;
+  margin: auto;
 }
 header .barra .logo {
   display: flex;
@@ -60,7 +65,7 @@ header .barra .logo .logo-img {
 }
 header .barra .logo h1 {
   color: rgb(219, 206, 161);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.8em;
   font-weight: unset;
   align-self: center;
@@ -129,10 +134,12 @@ header .navbar-toggler {
   /* ------------------------------- inicio nav ------------------------------- */
 }
 #header-home .barra {
-  max-width: 72rem;
-  margin: auto;
   display: flex;
   justify-content: center;
+  align-items: "";
+  flex-direction: "";
+  max-width: 72rem;
+  margin: auto;
 }
 #header-home .barra .logo {
   display: flex;
@@ -149,14 +156,16 @@ header .navbar-toggler {
 }
 #header-home .barra .logo h1 {
   color: rgb(219, 206, 161);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 3em;
   font-weight: unset;
   align-self: center;
 }
 #header-home .barra .redes_head {
   display: flex;
+  justify-content: "";
   align-items: center;
+  flex-direction: "";
 }
 #header-home .barra .redes_head .redes_head1 {
   display: flex;
@@ -178,9 +187,9 @@ header .navbar-toggler {
 }
 #header-home.down .logo h1 {
   color: rgb(219, 206, 161);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.8em;
-  font-weight: unset;
+  font-weight: bold;
   align-self: center;
 }
 #header-home.down .dropdown-menu {
@@ -317,8 +326,8 @@ footer .foot .redes .logo-f img {
 footer .foot .redes .logo-f .logo-tit-f {
   font-size: 1.5em;
   color: gray;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: unset;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
   align-self: center;
 }
 footer .foot .foot_contacto {
@@ -339,8 +348,9 @@ footer .foot .foot_contacto .foot_contacto_tit {
 }
 footer .foot .foot_contacto div .foot_contacto_iconos {
   display: flex;
+  justify-content: "";
+  align-items: center;
   flex-direction: row;
-  text-align: center;
 }
 footer .foot .foot_contacto div .foot_contacto_iconos .icono {
   width: 30px;
@@ -394,63 +404,74 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
 
 .body-home {
   position: relative;
-  top: 40rem;
+  top: 45rem;
 }
-.body-home .container {
-  max-width: 72em;
-  margin: auto;
-}
-@media screen and (max-width: 576px) {
-  .body-home .container .row {
-    max-width: 400px;
-    margin: auto;
-  }
-}
-.body-home .container .row .cont-card {
-  display: flex;
-  flex-wrap: nowrap;
-}
-.body-home .container .row .cont-card .card-home {
-  box-shadow: 0 0 30px 0 rgb(90, 88, 88);
-}
-.body-home .container .row .cont-card .card-home .card-img-top {
-  transition: all 1s;
-}
-.body-home .container .row .cont-card .card-home .card-img-top:hover {
-  transform: scale(0.9);
-}
-.deco-fila {
-  margin-top: 4em;
-  background-color: rgba(250, 249, 249, 0.788);
-  border-radius: 20px;
-}
-.deco-fila img {
-  filter: grayscale(1);
-}
-
-.home-nosotras {
-  padding: 2rem;
-  text-align: center;
-}
-.home-nosotras h2 {
-  font-family: "Slabo 27px", serif;
+.body-home h2 {
   font-size: 2.5em;
   font-weight: 500;
   text-align: center;
   padding: 0.5em 0em;
   border-bottom: 1px solid rgba(128, 128, 128, 0.603);
   margin-top: 1em;
+  margin-bottom: 1em;
 }
-.home-nosotras .btn.nos {
+.body-home .productos-destacados {
+  margin: 8em 1em;
+}
+.body-home .productos-destacados .splide__slide img {
+  width: 100%;
+  height: auto;
+}
+.body-home .container {
+  max-width: 72em;
+  margin: auto;
+}
+@media screen and (max-width: 576px) {
+  .body-home .container {
+    max-width: 400px;
+    margin: auto;
+  }
+}
+.body-home .container .tit-segunda-section {
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
+}
+.body-home .container .text-imp {
+  margin-top: 1em;
+  font-size: 1.3em;
+  font-family: "Poppins", sans-serif;
+}
+.body-home .container .card-home {
+  box-shadow: 0 0 30px 0 rgb(61, 39, 39);
+}
+.body-home .container .card-home .card-img-top {
+  transition: all 1s;
+  padding: 1em 1em;
+}
+.body-home .container .card-home .card-img-top img {
+  width: 100%;
+  align-self: center;
+}
+.body-home .container .card-home .card-img-top:hover {
+  transform: scale(1.1);
+}
+.body-home .home-nosotras {
+  padding: 2rem;
+  text-align: center;
+}
+.body-home .home-nosotras .btn.nos {
   display: flex;
   justify-content: center;
+  align-items: "";
+  flex-direction: "";
   padding: 0.6rem 0.8rem;
   margin: 1rem 4rem;
 }
-
-.img_nosotras {
+.body-home .img_nosotras {
   width: 100%;
-  padding: 3em;
+  padding: 2em;
 }
 
 /* -------------------------------- nosotras -------------------------------- */
@@ -459,18 +480,16 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   margin: auto;
 }
 .nos_portada h2 {
-  font-family: "Slabo 27px", serif;
   font-size: 2.5em;
-  font-weight: 500;
+  font-weight: bold;
   text-align: center;
   padding: 0.5em 0em;
   border-bottom: 1px solid gray;
-  margin: 1em;
+  margin: 0.8em;
 }
 .nos_portada .nos_portada_art {
   justify-self: center;
   padding: 1em 4em;
-  background-color: #f4f1e3;
   border-radius: 20px;
 }
 .nos_portada .nos_portada_art p {
@@ -494,8 +513,9 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
 
 .cont-colum {
   display: flex;
-  flex-direction: column;
+  justify-content: "";
   align-items: center;
+  flex-direction: column;
 }
 .cont-colum img {
   width: 60%;
@@ -538,9 +558,8 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   margin: auto;
 }
 .tit h2 {
-  font-family: "Slabo 27px", serif;
   font-size: 2.5em;
-  font-weight: 500;
+  font-weight: bold;
   text-align: center;
   padding: 0.5em 0em;
   border-bottom: 1px solid gray;
@@ -582,9 +601,8 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   margin: auto;
 }
 .mayor_tit h2 {
-  font-family: "Slabo 27px", serif;
   font-size: 2.5em;
-  font-weight: 500;
+  font-weight: bold;
   text-align: center;
   padding: 0.5em 0em;
   border-bottom: 1px solid gray;
@@ -669,9 +687,8 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   }
 }
 .body-info h2 {
-  font-family: "Slabo 27px", serif;
   font-size: 2.5em;
-  font-weight: 500;
+  font-weight: bold;
   text-align: center;
   padding: 0.5em 0em;
   border-bottom: 1px solid gray;
@@ -770,13 +787,14 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   text-align: center;
   padding-bottom: 1rem;
   border-bottom: 1px solid gray;
-  margin-top: 1rem;
   margin-top: 3rem;
 }
 
 .item_contacto {
   display: flex;
   justify-content: center;
+  align-items: "";
+  flex-direction: "";
   text-align: start;
 }
 .item_contacto img {
@@ -789,6 +807,8 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
 .item_redes {
   display: flex;
   justify-content: center;
+  align-items: "";
+  flex-direction: "";
   padding: 0.4rem;
 }
 .item_redes a {
@@ -812,8 +832,9 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
 /* form  */
 .form-container {
   display: flex;
-  flex-direction: column;
+  justify-content: "";
   align-items: center;
+  flex-direction: column;
   background-color: rgb(226, 225, 225);
 }
 .form-container .form-tit {
@@ -830,11 +851,12 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   margin: 0 0 1.5rem 0;
 }
 .form-container .contacto-form .form-row {
-  margin-bottom: 20px;
   display: flex;
   justify-content: flex-start;
+  align-items: "";
   flex-direction: column;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 .form-container .contacto-form .form-row label {
   margin-bottom: 10px;

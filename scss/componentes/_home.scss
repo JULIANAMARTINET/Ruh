@@ -33,66 +33,80 @@
 
 .body-home {
   position: relative;
-  top: 40rem;
-
-  .container {
-    max-width: 72em;
-    margin: auto;
-
-    .row {
-      @media screen and (max-width: 576px) {
-        max-width: 400px;
-        margin: auto
-      }
-
-      .cont-card {
-        display: flex;
-        flex-wrap: nowrap;
-
-        .card-home {
-          box-shadow: 0 0 30px 0 rgb(90, 88, 88);
-
-          .card-img-top {
-            transition: all 1s;
-
-            &:hover {
-              transform: scale(0.9);
-            }
-          }
-
-          .btn {
-            @extend %boton
-          }
-        }
-      }
-    }
-  }
-}
-
-
-.deco-fila {
-  margin-top: 4em;
-  background-color: rgba(250, 249, 249, 0.788);
-  border-radius: 20px;
-
-  img {
-    filter: grayscale(1);
-  }
-}
-
-.home-nosotras {
-  padding: 2rem;
-  text-align: center;
+  top: 45rem;
 
   h2 {
-    font-family: "Slabo 27px", serif;
     font-size: 2.5em;
     font-weight: 500;
     text-align: center;
     padding: 0.5em 0em;
     border-bottom: 1px solid rgba(128, 128, 128, 0.603);
-    margin-top: 1em
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
+
+  .productos-destacados { 
+    margin: 8em 1em;
+
+  .splide__slide img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+  .container {
+    max-width: 72em;
+    margin: auto;
+    @media screen and (max-width: 576px) {
+      max-width: 400px;
+      margin: auto;
+    }
+    
+      .tit-segunda-section {
+        font-family: 'Poppins', sans-serif;
+        font-size: 60px;
+        line-height: 60px;
+        font-weight: bold
+      }
+
+      .text-imp {
+        margin-top: 1em;
+        font-size: 1.3em;
+        font-family: 'Poppins', sans-serif;
+      }
+      .btn {
+        @extend %boton
+      }
+
+      .card-home {
+        box-shadow: 0 0 30px 0 rgb(61, 39, 39);
+
+        .btn {
+          @extend %boton
+        }
+
+        .card-img-top {
+          transition: all 1s;
+          padding: 1em 1em;
+
+          img {width: 100%; align-self: center;}
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+
+      
+    }
+  }
+
+
+
+.home-nosotras {
+  padding: 2rem;
+  text-align: center;
+
+
 
   .btn.nos {
     @extend %boton;
@@ -104,7 +118,8 @@
 
 .img_nosotras {
   width: 100%;
-  padding: 3em;
+  padding: 2em;
+}
 }
 
 // fin cuerpo home 
