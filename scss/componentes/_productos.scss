@@ -10,12 +10,20 @@
      text-align: center;
      padding: 0.5em 0em;
      border-bottom: 1px solid gray;
-     margin: 1em 3em
+     margin: 1em
    }
+
+   @media screen and (max-width: 575px) {
+   font-size: 14px;
+  }
  }
 
  .prod-tit {
    margin: 2rem 0rem 0rem 5rem;
+
+   @media screen and (max-width: 575px) {
+    text-align: center;
+    margin: 0em}
  }
 
  .card-row {

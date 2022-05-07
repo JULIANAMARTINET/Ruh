@@ -5,9 +5,8 @@
   margin: auto;
 
   @media screen and (max-width: 570px) {
-    font-size: 12px
+    font-size: 12px;
   }
-
 
   h2 {
     font-size: 2.5em;
@@ -15,10 +14,10 @@
     text-align: center;
     padding: 0.5em 0em;
     border-bottom: 1px solid gray;
-    margin: 1em 6em;
+    margin: 1em 4em;
 
     @media screen and (max-width: 570px) {
-      margin: 1em 2.5em;
+      margin: 1em;
     }
   }
 
@@ -34,7 +33,7 @@
     margin-bottom: 3em;
 
     .text-acordeon {
-      font-size: 0.8em;
+      font-size: 0.7em;
       background-color: lighten(nth($colores, 1), 45%);
 
       &:not(.collapsed) {
@@ -68,6 +67,8 @@
       .main_art_video {
         width: 100%;
         justify-self: start;
+
+        a { color: nth($colores,1)}
       }
 
       .main_art {
@@ -76,6 +77,7 @@
         flex-direction: column;
         justify-self: center;
         align-self: center;
+        a { color: nth($colores,1)}
       }
 
       img {
@@ -99,8 +101,8 @@
     }
 
     h4 {
-      margin-bottom: 2em;
-      margin-top: 1.5em;
+      text-align: center;
+     margin: 1.2em 0em;
     }
 
     .img-fluid {

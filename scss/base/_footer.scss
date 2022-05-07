@@ -41,7 +41,10 @@
 
      .redes {
        @include ubicacion (flex, center, center, column);
-       margin: 0em 0.5em;
+       margin: 0em 0.5em 0em 3em;
+       @media screen and (max-width: 576px) {
+        margin: 0.5em;
+       }
 
        .redes_tit {
          margin-top: 0.5rem;
@@ -57,7 +60,7 @@
 
          .redes_link1 {
            padding: 0.5em;
-           margin-bottom: 2.5em;
+           margin-bottom: 1.5em;
 
            .redes-img {
              width: 3.12em;
@@ -66,7 +69,7 @@
 
          .redes_link2 {
            padding: 0.5em;
-           margin-bottom: 2.5em;
+           margin-bottom: 1.5em;
 
            .redes-img {
              width: 3.12em;
@@ -79,9 +82,7 @@
          margin-bottom: 1em;
 
          img {
-           width: 5em;
-           padding-right: 0.5em;
-           filter: grayscale(1);
+           width: 4em;
          }
 
          .logo-tit-f {
@@ -90,6 +91,7 @@
            font-family: 'Raleway', sans-serif;
            font-weight: bold;
            align-self: center;
+           margin-bottom: 0em
          }
        }
      }
@@ -134,7 +136,7 @@
    }
 
    @media screen and (max-width: 576px) {
-     font-size: 12px;
+     font-size: 10px;
    }
  }
 

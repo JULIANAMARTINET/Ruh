@@ -5,14 +5,24 @@
   justify-items: center;
   width: 70%;
   margin: auto;
+  border-bottom: 1px solid gray;
 
   h2 {
     font-size: 2.5em;
     font-weight: bold;
     text-align: center;
     padding: 0.5em 0em;
-    border-bottom: 1px solid gray;
-    margin: 1em 0em;
+    margin-top: 1em;
+  }
+
+  p{ font-size: 1.8em;
+  text-align: center;}
+
+  @media screen and (max-width: 576px) {
+    font-size: 12px;
+    width: 90%;
+    margin: auto;
+   
   }
 }
 
