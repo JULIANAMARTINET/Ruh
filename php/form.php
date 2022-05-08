@@ -1,14 +1,16 @@
 <?php
     $nombre = $_POST['nombre'];
-    $mail = $_POST['email'];
+    $mail = $_POST['email']; 
     $telefono = $_POST['telefono'];
     $mensaje = $_POST['textarea'];
+
+    $header .= "Content-Type: text/plain";
     
-$mensaje = "Este mensaje fue enviado por: " . $nombre . ",\r\n";
-$mensaje .= "Su mail es: " . $mail . ",\r\n";
-$mensaje .= "Su telefono es: " . $telefono . ",\r\n" ;
-$mensaje .= "Mensaje: " . $_POST ["mensaje"] . ",\r\n";
-$mensaje .= "Enviado el: " . date('d/m/y', time()); 
+    $mensaje = "Este mensaje fue enviado por: " . $nombre . ",\r\n";
+    $mensaje .= "Su mail es: " . $mail . ",\r\n";
+    $mensaje .= "Su telefono es: " . $telefono . ",\r\n" ;
+    $mensaje .= "Mensaje: " . $_POST ["mensaje"] . ",\r\n";
+    $mensaje .= "Enviado el: " . date('d/m/y', time()); 
 
     $para = 'martinetjuliana@gmail.com';
     $asunto = 'Este mail fue enviado desde la web';
