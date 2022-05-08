@@ -22,9 +22,12 @@
 
 .item_contacto {
   @include ubicacion (flex, start, "", "");
-  text-align: start;
   padding-top: 0.8em;
   padding-left: 2.5em;
+  @media screen and (max-width: 576px) {
+    padding-left: 6em;
+    
+  }
 
   img {
     margin-right: 0.5em;

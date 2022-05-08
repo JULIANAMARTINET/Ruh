@@ -879,9 +879,13 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   justify-content: start;
   align-items: "";
   flex-direction: "";
-  text-align: start;
   padding-top: 0.8em;
   padding-left: 2.5em;
+}
+@media screen and (max-width: 576px) {
+  .contacto-page .item_contacto {
+    padding-left: 6em;
+  }
 }
 .contacto-page .item_contacto img {
   margin-right: 0.5em;
