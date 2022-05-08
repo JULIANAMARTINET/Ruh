@@ -19,11 +19,19 @@
  }
 
  .prod-tit {
-   margin: 2rem 0rem 0rem 5rem;
+   margin: 2em 2em 0em 2em;
+   padding: 0.5em 2em;
+   background-color: nth($colores,8 );
+   color: nth($colores, 7);
+   font-weight: bold;
+   border-radius: 20px;
+   text-align: start;
+ 
 
    @media screen and (max-width: 575px) {
     text-align: center;
     margin: 0em}
+    padding: 0.5em;
  }
 
  .card-row {

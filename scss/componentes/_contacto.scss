@@ -1,16 +1,30 @@
 /* -------------------------------- contacto -------------------------------- */
 
+.contacto-page {
+  @media screen and (max-width: 1200px) {
+  max-width: 100%;
+  }
+  @media screen and (max-width: 571px) {
+    font-size: 14px;
+  }
+
 .contacto-tit {
-  font-size: 1.5rem;
+  background-color: nth($colores,8 );
+  color: nth($colores, 7);
+  font-weight: bold;
+  border-radius: 20px;
+  font-size: 1.5em;
   text-align: center;
-  padding-bottom: 1rem;
+  padding: 0.4em;
   border-bottom: 1px solid gray;
-  margin-top: 3rem
+  margin-top: 1em;
 }
 
 .item_contacto {
-  @include ubicacion (flex, center, "", "");
+  @include ubicacion (flex, start, "", "");
   text-align: start;
+  padding-top: 0.8em;
+  padding-left: 2.5em;
 
   img {
     margin-right: 0.5em;
@@ -32,18 +46,29 @@
     color: black;
   }
 
-  .r-instagram:hover {
-    color: map-get($redes, instagram)
+  .r-instagram {
+    text-align: start;
+
+    &:hover {
+      color: map-get($redes, instagram);
+      text-align: start;
+    }
   }
 
-  .r-facebook:hover {
-    color: map-get($redes, facebook)
+  .r-facebook {
+    text-align: start;
+
+    &:hover {
+      color: map-get($redes, facebook);
+      text-align: start;
+    }
   }
 }
 
+  
 .mapa {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 /* form  */
@@ -51,28 +76,30 @@
 .form-container {
   @include ubicacion (flex, "", center, column);
   background-color: rgb(226, 225, 225);
+  border-radius: 20px;
 
   .form-tit {
     text-align: center;
     border-color: 1px solid rgb(228, 223, 223);
     border-radius: 3px;
-    margin: 0.5rem 0;
-    padding: 0.4rem
+    margin: 0.5em 0;
+    padding: 0.4em;
+    font-size: 1.5em;
   }
 
   .contacto-form {
     border: 1px solid rgb(228, 223, 223);
     border-radius: 3px;
     width: 80%;
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 1.5em 0;
 
     .form-row {
       @include ubicacion (flex, flex-start, "", column);
       flex-wrap: wrap;
-      margin-bottom: 20px;
+      margin-bottom: 0.8em;
 
       label {
-        margin-bottom: 10px;
+        margin-bottom: 0.5em;
       }
 
       input[type="text"],
@@ -89,7 +116,7 @@
         background-color: white;
         border: 1px solid rgb(163, 163, 167);
         border-radius: 3px;
-        margin-bottom: 10px;
+        margin-bottom: 0.5em;
         padding: 7px;
         min-height: 100px;
         min-width: 100%;
@@ -98,7 +125,7 @@
 
       .instructions {
         color: rgb(109, 107, 107);
-        margin-bottom: 20px;
+        margin-bottom: 0.8em;
       }
 
       button {
@@ -107,7 +134,7 @@
         background-color: rgb(100, 157, 204);
         border: none;
         border-radius: 3px;
-        padding: 10px 30px;
+        padding: 0.8em 1em;
         cursor: pointer;
 
         &:hover {
@@ -120,4 +147,5 @@
       }
     }
   }
+}
 }
