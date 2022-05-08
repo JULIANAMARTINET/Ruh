@@ -16,8 +16,6 @@ document.addEventListener( 'DOMContentLoaded', function () {
   speed: 400,
   autoplay: true,
   interval: 3000
-
-
     } ).mount();
   } );
 

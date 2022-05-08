@@ -996,4 +996,18 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   background-color: rgb(76, 132, 238);
 }
 
+.exito {
+  margin: 10em;
+  text-align: center;
+  background-color: #e9e5d5;
+  padding: 5em;
+  border-radius: 20px;
+}
+@media screen and (max-width: 576px) {
+  .exito {
+    margin: 6em 2em;
+    padding: 2em;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
