@@ -42,8 +42,9 @@
      .redes {
        @include ubicacion (flex, center, center, column);
        margin: 0em 0.5em 0em 3em;
+
        @media screen and (max-width: 576px) {
-        margin: 0.5em;
+         margin: 0.5em;
        }
 
        .redes_tit {
@@ -59,15 +60,6 @@
          padding-top: 2rem;
 
          .redes_link1 {
-           padding: 0.5em;
-           margin-bottom: 1.5em;
-
-           .redes-img {
-             width: 3.12em;
-           }
-         }
-
-         .redes_link2 {
            padding: 0.5em;
            margin-bottom: 1.5em;
 
@@ -132,7 +124,6 @@
        max-width: 700px;
        margin: auto;
      }
-
    }
 
    @media screen and (max-width: 576px) {

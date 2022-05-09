@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Open+Sans:ital,wght@1,600;1,700&family=Poppins:wght@300&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Open+Sans:ital,wght@1,600&family=Poppins:wght@300;600&family=Raleway&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -15,19 +15,19 @@ h2, h3, h4 {
   font-family: "Poppins", sans-serif;
 }
 
-.container-img .evento-descripcion figure .btn, .body-home .home-nosotras .btn.nos, .body-home .container .card-home .btn, .body-home .container .first-text .btn {
+.container-img .evento-descripcion figure .btn, .body-home .home-nosotras .btn.nos, .body-home .container .card-home .btn, .body-home .container .productos-text .btn {
   background-color: rgb(148, 138, 138);
   border-radius: 5%;
   color: white;
   border: none;
   transition: all 1s;
 }
-.container-img .evento-descripcion figure .btn:hover, .body-home .home-nosotras .btn.nos:hover, .body-home .container .card-home .btn:hover, .body-home .container .first-text .btn:hover {
+.container-img .evento-descripcion figure .btn:hover, .body-home .home-nosotras .btn.nos:hover, .body-home .container .card-home .btn:hover, .body-home .container .productos-text .btn:hover {
   background-color: rgb(219, 206, 161);
   color: white;
   transform: scale(1.1);
 }
-.container-img .evento-descripcion figure .btn a, .body-home .home-nosotras .btn.nos a, .body-home .container .card-home .btn a, .body-home .container .first-text .btn a {
+.container-img .evento-descripcion figure .btn a, .body-home .home-nosotras .btn.nos a, .body-home .container .card-home .btn a, .body-home .container .productos-text .btn a {
   text-decoration: none;
   color: white;
 }
@@ -152,7 +152,7 @@ header .navbar-toggler {
   padding: 0.5em;
   opacity: 0;
 }
-#header-home .barra .logo .logo-s-fondo {
+#header-home .barra .logo .logo-portada {
   width: 5em;
   padding: 0.5em 0.5em 1em 0em;
 }
@@ -162,20 +162,6 @@ header .navbar-toggler {
   font-size: 3em;
   font-weight: unset;
   align-self: center;
-}
-#header-home .barra .redes_head {
-  display: flex;
-  justify-content: "";
-  align-items: center;
-  flex-direction: "";
-}
-#header-home .barra .redes_head .redes_head1 {
-  display: flex;
-  padding: 0em 0.5em;
-  width: 3.125em;
-}
-#header-home .barra .redes_head .redes_head1 img {
-  width: 2.5em;
 }
 #header-home.down {
   background-color: #747c58;
@@ -187,7 +173,7 @@ header .navbar-toggler {
 #header-home.down .logo .logo-img {
   opacity: 1;
 }
-#header-home.down .logo .logo-s-fondo {
+#header-home.down .logo .logo-portada {
   display: none;
 }
 #header-home.down .logo h1 {
@@ -210,7 +196,7 @@ header .navbar-toggler {
 }
 #header-home .button-nav {
   background-color: rgb(243, 243, 225);
-  color: gray;
+  color: rgba(163, 165, 158, 0.4666666667);
 }
 #header-home .navbar-collapse {
   justify-content: center;
@@ -234,14 +220,14 @@ header .navbar-toggler {
   transition: clip-path 0.5s;
 }
 #header-home .nav-link:hover {
-  color: rgb(37, 36, 36);
+  color: rgba(163, 165, 158, 0.4666666667);
   --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 #header-home .dropdown-menu {
   background-color: transparent;
 }
 #header-home .navbar-toggler {
-  margin: 0.25rem;
+  margin: 0.25em;
 }
 @media screen and (max-width: 576px) {
   #header-home {
@@ -315,13 +301,6 @@ footer .foot .redes .redes_iconos .redes_link1 {
   margin-bottom: 1.5em;
 }
 footer .foot .redes .redes_iconos .redes_link1 .redes-img {
-  width: 3.12em;
-}
-footer .foot .redes .redes_iconos .redes_link2 {
-  padding: 0.5em;
-  margin-bottom: 1.5em;
-}
-footer .foot .redes .redes_iconos .redes_link2 .redes-img {
   width: 3.12em;
 }
 footer .foot .redes .logo-f {
@@ -413,16 +392,7 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
 
 .body-home {
   position: relative;
-  top: 45rem;
-}
-.body-home h2 {
-  font-size: 2.5em;
-  font-weight: 500;
-  text-align: center;
-  padding: 0.5em 0em;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.603);
-  margin-top: 1em;
-  margin-bottom: 1em;
+  top: 45em;
 }
 .body-home .container {
   max-width: 72em;
@@ -435,21 +405,22 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   }
 }
 @media screen and (max-width: 576px) {
-  .body-home .container .first-text {
+  .body-home .container .productos-text {
     font-size: 12px;
     padding: 0em 3em;
   }
 }
-.body-home .container .first-text .tit-segunda-section {
+.body-home .container .productos-text h2 {
   font-family: "Poppins", sans-serif;
   font-size: 3.75em;
-  line-height: 60px;
-  font-weight: bold;
+  font-weight: 600;
+  color: #61584f;
 }
-.body-home .container .first-text .text-imp {
+.body-home .container .productos-text .productos-text-p {
   margin-top: 1em;
   font-size: 1.3em;
   font-family: "Poppins", sans-serif;
+  text-align: start;
 }
 .body-home .container .card-home {
   box-shadow: 0 0 30px 0 rgb(61, 39, 39);
@@ -479,6 +450,15 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
     font-size: 12px;
     margin: 4em 0em;
   }
+}
+.body-home .productos-destacados h3 {
+  font-size: 2.5em;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.5em 0em;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.603);
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 .body-home .productos-destacados .splide__slide img {
   width: 100%;
@@ -513,11 +493,10 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
 }
 .nos_portada h2 {
   font-size: 2.5em;
-  font-weight: bold;
   text-align: center;
   padding: 0.5em 0em;
   border-bottom: 1px solid gray;
-  margin: 0.8em;
+  margin: 0.5em;
 }
 .nos_portada .nos_portada_art {
   justify-self: center;
@@ -530,27 +509,30 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
 }
 @media screen and (max-width: 990px) {
   .nos_portada .nos_portada_art {
-    width: 70%;
+    width: 90%;
     margin: auto;
-    font-size: 14px;
   }
 }
 @media screen and (max-width: 770px) {
   .nos_portada .nos_portada_art {
     width: 90%;
     margin: auto;
-    font-size: 12px;
     padding: 0em;
   }
 }
+@media screen and (max-width: 576px) {
+  .nos_portada {
+    font-size: 14px;
+  }
+}
 
-.cont-colum {
+.descripcion-nos {
   display: flex;
   justify-content: "";
   align-items: center;
   flex-direction: column;
 }
-.cont-colum img {
+.descripcion-nos img {
   width: 60%;
   border-radius: 2%;
   position: relative;
@@ -558,66 +540,65 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   filter: grayscale(100%);
   transition: all 0.5s;
 }
-.cont-colum img:hover {
+.descripcion-nos img:hover {
   filter: none;
   transform: scale(1.1);
 }
-@media screen and (max-width: 500px) {
-  .cont-colum img {
+@media screen and (max-width: 576px) {
+  .descripcion-nos img {
     width: 80%;
   }
 }
-.cont-colum .nos_main_art {
+.descripcion-nos .nos_text {
   padding: 4em 3em 0em 3em;
   margin: 0em 5em 1em 5em;
-  border: 2px solid gray;
+  border: 3px solid rgba(163, 165, 158, 0.4666666667);
 }
 @media screen and (max-width: 1200px) {
-  .cont-colum .nos_main_art {
+  .descripcion-nos .nos_text {
     margin: 0em 3em 1em 3em;
   }
 }
-@media screen and (max-width: 500px) {
-  .cont-colum .nos_main_art {
+@media screen and (max-width: 576px) {
+  .descripcion-nos .nos_text {
     margin: 0em 0.5em 1em 0.5em;
-    padding: 3em 1em 0em 1em;
+    padding: 4em 1em 0em 1em;
+    font-size: 14px;
   }
 }
 
 /* ------------------------------ fin nosotras ------------------------------ */
 /* -------------------------------- Productos ------------------------------- */
-.tit {
+.tit-productos {
   max-width: 1140px;
   margin: auto;
 }
-.tit h2 {
+.tit-productos h2 {
   font-size: 2.5em;
-  font-weight: bold;
   text-align: center;
   padding: 0.5em 0em;
   border-bottom: 1px solid gray;
   margin: 1em;
 }
-@media screen and (max-width: 575px) {
-  .tit {
+@media screen and (max-width: 576px) {
+  .tit-productos {
     font-size: 14px;
   }
 }
 
-.prod-tit {
+.categoria-productos {
   margin: 2em 2em 0em 2em;
   padding: 0.5em 2em;
   background-color: #e9e5d5;
   color: #61584f;
-  font-weight: bold;
   border-radius: 20px;
   text-align: start;
-  padding: 0.5em;
 }
 @media screen and (max-width: 575px) {
-  .prod-tit {
+  .categoria-productos {
     text-align: center;
     margin: 0em;
+    font-size: 20px;
   }
 }
 
@@ -625,10 +606,6 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   .card-row {
     justify-content: center;
   }
-}
-.card-row .cont-card {
-  display: flex;
-  flex-wrap: nowrap;
 }
 @media screen and (max-width: 575px) {
   .card-row .cont-card {
@@ -654,20 +631,24 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
 }
 .mayor_tit h2 {
   font-size: 2.5em;
-  font-weight: bold;
   text-align: center;
-  padding: 0.5em 0em;
   margin-top: 1em;
 }
 .mayor_tit p {
   font-size: 1.8em;
   text-align: center;
+  color: #61584f;
 }
 @media screen and (max-width: 576px) {
   .mayor_tit {
-    font-size: 12px;
     width: 90%;
     margin: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .mayor_tit {
+    font-size: 14px;
+    width: 90%;
   }
 }
 
@@ -684,18 +665,29 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
 }
 .container-img .evento-descripcion {
   background-color: #f7f4eb;
-  border: 5px solid rgb(219, 206, 161);
+  border: 4px solid rgb(219, 206, 161);
   border-radius: 2%;
-  color: rgb(63, 44, 8);
+  color: #61584f;
+  font-weight: bold;
   text-align: center;
   font-size: 1.2em;
   align-items: center;
 }
 .container-img .evento-descripcion figure {
-  margin-top: 2rem;
+  margin-top: 2em;
+}
+@media screen and (max-width: 770px) {
+  .container-img .evento-descripcion figure {
+    margin-top: 1em;
+  }
 }
 .container-img .evento-descripcion figure .btn a {
   font-size: 1em;
+}
+@media screen and (max-width: 576px) {
+  .container-img .evento-descripcion {
+    font-size: 16px;
+  }
 }
 .container-img .box-img:nth-child(1) {
   grid-column-start: span 2;
@@ -750,7 +742,6 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
 }
 .body-info h2 {
   font-size: 2.5em;
-  font-weight: bold;
   text-align: center;
   padding: 0.5em 0em;
   border-bottom: 1px solid gray;
@@ -764,61 +755,74 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
 .body-info .text-naturaleza {
   margin: 0em 8em 2em 8em;
 }
+.body-info .text-naturaleza p {
+  font-size: 1.1em;
+}
+.body-info .text-naturaleza img {
+  padding-left: 1em;
+}
+@media screen and (max-width: 991px) {
+  .body-info .text-naturaleza {
+    margin: 0em 7em 2em 7em;
+  }
+}
 @media screen and (max-width: 570px) {
   .body-info .text-naturaleza {
     margin: 0em 2em 2em 2em;
   }
 }
-.body-info .container {
+.body-info .acordeon-info {
   margin-bottom: 3em;
 }
-.body-info .container .text-acordeon {
+.body-info .acordeon-info .text-acordeon {
   font-size: 0.7em;
   background-color: #e0e3d7;
 }
-.body-info .container .text-acordeon:not(.collapsed) {
+.body-info .acordeon-info .text-acordeon:not(.collapsed) {
   color: rgb(243, 243, 225);
   background-color: #747c58;
 }
-.body-info .container .text-acordeon:not(.collapsed)::after {
+.body-info .acordeon-info .text-acordeon:not(.collapsed)::after {
   color: rgb(243, 243, 225);
   background-color: #747c58;
 }
-.body-info .container .info1 {
+.body-info .acordeon-info .info1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   font-size: 1em;
   line-height: 1.5em;
 }
-.body-info .container .info1 video {
+.body-info .acordeon-info .info1 video {
   width: 90%;
   justify-self: center;
   object-fit: cover;
   height: 100%;
 }
 @media screen and (max-width: 990px) {
-  .body-info .container .info1 video {
+  .body-info .acordeon-info .info1 video {
     width: 70%;
   }
 }
-.body-info .container .info1 .main_art_video {
+.body-info .acordeon-info .info1 .main_art_video {
   width: 100%;
   justify-self: start;
 }
-.body-info .container .info1 .main_art_video a {
+.body-info .acordeon-info .info1 .main_art_video a {
   color: #747c58;
 }
-.body-info .container .info1 .main_art {
+.body-info .acordeon-info .info1 .main_art {
   width: 90%;
   display: flex;
+  justify-content: "";
+  align-items: "";
   flex-direction: column;
   justify-self: center;
   align-self: center;
 }
-.body-info .container .info1 .main_art a {
+.body-info .acordeon-info .info1 .main_art a {
   color: #747c58;
 }
-.body-info .container .info1 img {
+.body-info .acordeon-info .info1 img {
   width: 70%;
   border-radius: 1.5%;
   box-shadow: 10px 5px 5px rgba(173, 140, 77, 0.589);
@@ -827,22 +831,22 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   height: 100%;
 }
 @media screen and (max-width: 990px) {
-  .body-info .container .info1 img {
+  .body-info .acordeon-info .info1 img {
     width: 70%;
   }
 }
 @media screen and (max-width: 990px) {
-  .body-info .container .info1 {
+  .body-info .acordeon-info .info1 {
     grid-template-columns: 1fr;
     font-size: 1em;
     line-height: 1.5em;
   }
 }
-.body-info .container h4 {
+.body-info .acordeon-info h4 {
   text-align: center;
   margin: 1.2em 0em;
 }
-.body-info .container .img-fluid {
+.body-info .acordeon-info .img-fluid {
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -871,7 +875,7 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   font-size: 1.5em;
   text-align: center;
   padding: 0.4em;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #575253;
   margin-top: 1em;
 }
 .contacto-page .item_contacto {
@@ -934,14 +938,12 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
 }
 .contacto-page .form-container .form-tit {
   text-align: center;
-  border-color: 1px solid rgb(228, 223, 223);
   border-radius: 3px;
   margin: 0.5em 0;
   padding: 0.4em;
   font-size: 1.5em;
 }
 .contacto-page .form-container .contacto-form {
-  border: 1px solid rgb(228, 223, 223);
   border-radius: 3px;
   width: 80%;
   margin: 0 0 1.5em 0;
@@ -986,20 +988,20 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   background-color: rgb(100, 157, 204);
   border: none;
   border-radius: 3px;
-  padding: 0.8em 1em;
+  padding: 0.8em;
   cursor: pointer;
 }
 .contacto-page .form-container .contacto-form .form-row button:hover {
-  background-color: rgb(131, 171, 243);
+  background-color: rgb(77, 144, 199);
 }
 .contacto-page .form-container .contacto-form .form-row button:active {
-  background-color: rgb(76, 132, 238);
+  background-color: rgb(54, 117, 168);
 }
 
 .exito {
   margin: 10em;
   text-align: center;
-  background-color: #e9e5d5;
+  background-color: #575253;
   padding: 5em;
   border-radius: 20px;
 }

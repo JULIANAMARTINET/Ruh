@@ -1,37 +1,35 @@
  /* -------------------------------- Productos ------------------------------- */
 
- .tit {
+ .tit-productos {
    max-width: 1140px;
    margin: auto;
 
    h2 {
      font-size: 2.5em;
-     font-weight: bold;
      text-align: center;
      padding: 0.5em 0em;
      border-bottom: 1px solid gray;
      margin: 1em
    }
 
-   @media screen and (max-width: 575px) {
-   font-size: 14px;
-  }
+   @media screen and (max-width: 576px) {
+     font-size: 14px;
+   }
  }
 
- .prod-tit {
+ .categoria-productos {
    margin: 2em 2em 0em 2em;
    padding: 0.5em 2em;
-   background-color: nth($colores,8 );
-   color: nth($colores, 7);
-   font-weight: bold;
+   background-color: nth($colores, 7);
+   color: nth($colores, 6);
    border-radius: 20px;
    text-align: start;
- 
 
    @media screen and (max-width: 575px) {
-    text-align: center;
-    margin: 0em}
-    padding: 0.5em;
+     text-align: center;
+     margin: 0em;
+     font-size: 20px;
+   }
  }
 
  .card-row {
@@ -40,9 +38,6 @@
    }
 
    .cont-card {
-     display: flex;
-     flex-wrap: nowrap;
-
      @media screen and (max-width: 575px) {
        justify-content: center;
      }
@@ -56,8 +51,5 @@
      }
    }
  }
-
-
-
 
  /* ------------------------------ fin productos ----------------------------- */

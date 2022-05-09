@@ -26,31 +26,17 @@
                 opacity: 0;
             }
 
-            .logo-s-fondo {
+            .logo-portada {
                 width: 5em;
-                padding: 0.5em 0.5em 1em 0em; }
-            
+                padding: 0.5em 0.5em 1em 0em;
+            }
+
             h1 {
                 color: nth($colores, 3);
                 font-family: 'Raleway', sans-serif;
                 font-size: 3em;
                 font-weight: unset;
                 align-self: center;
-               
-            }
-        }
-
-        .redes_head {
-            @include ubicacion (flex, "", center, "");
-
-            .redes_head1 {
-                display: flex;
-                padding: 0em 0.5em;
-                width: 3.125em;
-
-                img {
-                    width: 2.5em
-                }
             }
         }
     }
@@ -61,12 +47,12 @@
 
         .logo {
             right: 0;
-        
+
             .logo-img {
                 opacity: 1;
             }
 
-            .logo-s-fondo {
+            .logo-portada {
                 display: none;
             }
 
@@ -96,7 +82,7 @@
 
     .button-nav {
         background-color: nth($colores, 2);
-        color: gray;
+        color: nth($colores, 4);
     }
 
     .navbar-collapse {
@@ -125,7 +111,7 @@
     }
 
     .nav-link:hover {
-        color: rgb(37, 36, 36);
+        color: nth($colores, 4);
         --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 
@@ -134,7 +120,7 @@
     }
 
     .navbar-toggler {
-        margin: .25rem
+        margin: .25em
     }
 
     @media screen and (max-width: 576px) {

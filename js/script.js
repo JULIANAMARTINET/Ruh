@@ -19,8 +19,5 @@ document.addEventListener( 'DOMContentLoaded', function () {
     } ).mount();
   } );
 
-  setTimeout(function() {
-      window.location.replace("index.html" )
-  }, 5000);
 
 

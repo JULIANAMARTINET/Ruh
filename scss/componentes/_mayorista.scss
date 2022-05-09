@@ -9,20 +9,24 @@
 
   h2 {
     font-size: 2.5em;
-    font-weight: bold;
     text-align: center;
-    padding: 0.5em 0em;
     margin-top: 1em;
   }
 
-  p{ font-size: 1.8em;
-  text-align: center;}
+  p {
+    font-size: 1.8em;
+    text-align: center;
+    color: nth($colores, 6);
+  }
 
   @media screen and (max-width: 576px) {
-    font-size: 12px;
     width: 90%;
     margin: auto;
-   
+  }
+
+  @media screen and (max-width: 576px) {
+    font-size: 14px;
+    width: 90%;
   }
 }
 
@@ -39,15 +43,20 @@
 
   .evento-descripcion {
     background-color: lighten(nth($colores, 3), 20%);
-    border: 5px solid nth($colores, 3);
+    border: 4px solid nth($colores, 3);
     border-radius: 2%;
-    color: rgb(63, 44, 8);
+    color: nth($colores, 6);
+    font-weight: bold;
     text-align: center;
     font-size: 1.2em;
     align-items: center;
 
     figure {
-      margin-top: 2rem;
+      margin-top: 2em;
+
+      @media screen and (max-width: 770px) {
+        margin-top: 1em;
+      }
 
       .btn {
         @extend %boton;
@@ -56,6 +65,10 @@
           font-size: 1em;
         }
       }
+    }
+
+    @media screen and (max-width: 576px) {
+      font-size: 16px;
     }
   }
 
