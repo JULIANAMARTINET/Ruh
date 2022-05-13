@@ -54,8 +54,8 @@ header {
 header .barra {
   display: flex;
   justify-content: center;
-  align-items: "";
-  flex-direction: "";
+  align-items: "center";
+  flex-direction: "row";
   max-width: 72rem;
   margin: auto;
 }
@@ -140,8 +140,8 @@ header .navbar-toggler {
 #header-home .barra {
   display: flex;
   justify-content: center;
-  align-items: "";
-  flex-direction: "";
+  align-items: "center";
+  flex-direction: "row";
   max-width: 72rem;
   margin: auto;
 }
@@ -150,13 +150,16 @@ header .navbar-toggler {
   right: 2em;
   display: flex;
 }
-#header-home .barra .logo .logo-img {
+#header-home .barra .logo a {
+  color: transparent;
+}
+#header-home .barra .logo a .logo-img {
   width: 4em;
   border-radius: 20%;
   padding: 0.5em;
   opacity: 0;
 }
-#header-home .barra .logo .logo-portada {
+#header-home .barra .logo a .logo-portada {
   width: 5em;
   padding: 0.5em 0.5em 1em 0em;
 }

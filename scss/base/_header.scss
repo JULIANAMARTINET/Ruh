@@ -8,7 +8,7 @@ header {
     font-size: 1em;
 
     .barra {
-        @include ubicacion (flex, center, "", "");
+        @include ubicacion (flex, center, "center", "row");
         max-width: 72rem;
         margin: auto;
 
