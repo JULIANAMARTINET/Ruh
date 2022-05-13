@@ -38,6 +38,10 @@ footer .foot .redes .redes_iconos {
   align-items: center;
 }
 
+.disclaimer {
+  visibility: hidden;
+}
+
 /* --------------------------------- header --------------------------------- */
 header {
   z-index: 10;
@@ -312,7 +316,7 @@ footer .foot .redes .logo-f img {
 }
 footer .foot .redes .logo-f .logo-tit-f {
   font-size: 1.5em;
-  color: gray;
+  color: rgba(112, 115, 106, 0.4666666667);
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   align-self: center;
@@ -382,7 +386,6 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
 .carousel .carousel-inner .active .text-carousel {
   font-size: 3em;
   font-family: "Julius Sans One", sans-serif;
-  font-weight: bold 800;
   color: rgb(243, 243, 225);
   margin-bottom: 5em;
   background-color: rgba(129, 128, 125, 0.452);
@@ -854,9 +857,6 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
 
 /* ------------------------------ Fin + Info ----------------------------- */
 /* -------------------------------- contacto -------------------------------- */
-.contacto-page {
-  /* form  */
-}
 @media screen and (max-width: 1200px) {
   .contacto-page {
     max-width: 100%;
