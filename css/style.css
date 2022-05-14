@@ -157,7 +157,7 @@ header .navbar-toggler {
   width: 4em;
   border-radius: 20%;
   padding: 0.5em;
-  opacity: 0;
+  visibility: hidden;
 }
 #header-home .barra .logo a .logo-portada {
   width: 5em;
@@ -177,8 +177,8 @@ header .navbar-toggler {
 #header-home.down .logo {
   right: 0;
 }
-#header-home.down .logo .logo-img {
-  opacity: 1;
+#header-home.down .logo a .logo-img {
+  visibility: visible;
 }
 #header-home.down .logo .logo-portada {
   display: none;
@@ -256,6 +256,20 @@ footer .foot {
   max-width: 1140px;
   margin: auto;
 }
+@media screen and (max-width: 1140px) {
+  footer .foot {
+    max-width: 700px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  footer .foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
 footer .foot .botonera_f {
   margin: 0em 0.5em;
 }
@@ -309,17 +323,18 @@ footer .foot .redes .redes_iconos .redes_link1 {
 }
 footer .foot .redes .redes_iconos .redes_link1 .redes-img {
   width: 3.12em;
+  filter: grayscale(1);
+}
+footer .foot .redes .redes_iconos .redes_link1 .redes-img:hover {
+  filter: grayscale(0);
 }
 footer .foot .redes .logo-f {
   display: flex;
   margin-bottom: 1em;
 }
-footer .foot .redes .logo-f img {
-  width: 4em;
-}
 footer .foot .redes .logo-f .logo-tit-f {
   font-size: 1.5em;
-  color: rgba(112, 115, 106, 0.4666666667);
+  color: rgba(35, 35, 33, 0.4666666667);
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   align-self: center;
@@ -355,17 +370,6 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
   font-size: 1em;
   font-weight: lighter;
   padding: 0.6rem;
-}
-@media screen and (max-width: 1140px) {
-  footer .foot {
-    max-width: 700px;
-    margin: auto;
-  }
-}
-@media screen and (max-width: 576px) {
-  footer {
-    font-size: 10px;
-  }
 }
 
 /* ------------------------------- fin footer ------------------------------- */
@@ -1004,7 +1008,7 @@ footer .foot .foot_contacto div .foot_contacto_iconos h5 {
 .exito {
   margin: 10em;
   text-align: center;
-  background-color: #575253;
+  background-color: #e9e5d5;
   padding: 5em;
   border-radius: 20px;
 }
