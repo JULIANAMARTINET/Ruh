@@ -18,21 +18,22 @@
             position: relative;
             right: 2em;
             display: flex;
-            
-           a { color: transparent;
 
-            .logo-img {
-                width: 4em;
-                border-radius: 20%;
-                padding: 0.5em;
-                visibility: hidden;
-            }
+            a {
+                color: transparent;
 
-            .logo-portada {
-                width: 5em;
-                padding: 0.5em 0.5em 1em 0em;
+                .logo-img {
+                    width: 4em;
+                    border-radius: 20%;
+                    padding: 0.5em;
+                    visibility: hidden;
+                }
+
+                .logo-portada {
+                    width: 5em;
+                    padding: 0.5em 0.5em 1em 0em;
+                }
             }
-           }
 
             h1 {
                 color: nth($colores, 3);
@@ -50,7 +51,7 @@
 
         .logo {
             right: 0;
-            
+
 
             a .logo-img {
                 visibility: visible;

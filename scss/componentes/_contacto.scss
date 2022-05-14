@@ -4,10 +4,11 @@
   @media screen and (max-width: 1200px) {
     max-width: 100%;
   }
+
   @media screen and (max-width: 571px) {
     font-size: 14px;
   }
-  
+
   .contacto-tit {
     background-color: nth($colores, 7);
     color: nth($colores, 6);
@@ -41,6 +42,10 @@
   .item_redes {
     @include ubicacion (flex, center, "", "");
     padding: 0.4rem;
+
+    img {
+      filter: grayscale(1);
+    }
 
     a {
       align-items: center;

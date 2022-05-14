@@ -21,17 +21,20 @@
   }
 
   .text-naturaleza {
-    margin: 0em 8em 2em 8em; 
+    margin: 0em 8em 2em 8em;
 
-    p { 
+    p {
       font-size: 1.1em;
-    } 
-    img { 
+    }
+
+    img {
       padding-left: 1em;
     }
+
     @media screen and (max-width: 991px) {
       margin: 0em 7em 2em 7em;
     }
+
     @media screen and (max-width: 570px) {
       margin: 0em 2em 2em 2em;
     }
@@ -76,7 +79,9 @@
         width: 100%;
         justify-self: start;
 
-        a { color: nth($colores,1)}
+        a {
+          color: nth($colores, 1)
+        }
       }
 
       .main_art {
@@ -85,7 +90,9 @@
         justify-self: center;
         align-self: center;
 
-        a { color: nth($colores,1)}
+        a {
+          color: nth($colores, 1)
+        }
       }
 
       img {
@@ -107,7 +114,7 @@
         line-height: 1.5em;
       }
     }
- 
+
     h4 {
       text-align: center;
       margin: 1.2em 0em;
