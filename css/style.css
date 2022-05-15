@@ -187,7 +187,7 @@ header .navbar-toggler {
   color: rgb(219, 206, 161);
   font-family: "Raleway", sans-serif;
   font-size: 1.8em;
-  font-weight: bold;
+  font-weight: unset;
   align-self: center;
 }
 #header-home.down .dropdown-menu {
@@ -362,11 +362,11 @@ footer .foot .foot_contacto .box-contacto .foot_contacto_iconos {
 footer .foot .foot_contacto .box-contacto .foot_contacto_iconos .icono {
   width: 30px;
 }
-footer .foot .foot_contacto .box-contacto .foot_contacto_iconos h5 {
+footer .foot .foot_contacto .box-contacto .foot_contacto_iconos a {
   text-align: center;
-  font-size: 1em;
-  font-weight: lighter;
   padding: 0.6rem;
+  text-decoration: none;
+  color: black;
 }
 
 /* ------------------------------- fin footer ------------------------------- */
@@ -898,8 +898,10 @@ footer .foot .foot_contacto .box-contacto .foot_contacto_iconos h5 {
 .contacto-page .item_contacto img {
   margin-right: 0.5em;
 }
-.contacto-page .item_contacto .wp-n {
-  padding-right: 1em;
+.contacto-page .item_contacto a {
+  text-decoration: none;
+  color: black;
+  margin-top: 0.3em;
 }
 .contacto-page .item_redes {
   display: flex;
